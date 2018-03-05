@@ -1,0 +1,20 @@
+.center {
+  text-align: center;
+}
+.legend {
+  height: 500px;
+  float: right;
+  width: 15%;
+  overflow-y: scroll;
+}
+.white-background {
+  background-color: white;
+}
+.tooltip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}

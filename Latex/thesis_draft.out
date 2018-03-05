@@ -1,0 +1,14 @@
+\BOOKMARK [0][-]{chapter.1}{Motivation}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Corpus}{}% 2
+\BOOKMARK [1][-]{section.2.1}{State of the Union Addresses}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Topic Classifier Sets}{chapter.2}% 4
+\BOOKMARK [0][-]{chapter.3}{Preprocessing}{}% 5
+\BOOKMARK [1][-]{section.3.1}{NLP and NLTK}{chapter.3}% 6
+\BOOKMARK [1][-]{section.3.2}{Normalization}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.3}{Intensifiers}{chapter.3}% 8
+\BOOKMARK [0][-]{chapter.4}{Visualizations}{}% 9
+\BOOKMARK [1][-]{section.4.1}{D3}{chapter.4}% 10
+\BOOKMARK [1][-]{section.4.2}{Line Plot}{chapter.4}% 11
+\BOOKMARK [1][-]{section.4.3}{Word Clouds}{chapter.4}% 12
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 13
+\BOOKMARK [0][-]{chapter.6}{Discussion / Reflections}{}% 14

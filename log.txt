@@ -1,0 +1,89 @@
+3/23 - Created split.py and got text files to map correctly using split method, messed around with gawk and awk with a bit as well as Windows Powershell but it was too much hassle and went back to Python
+
+3/30 - Add in extra information so I could append the month to the file name and give every file a unique identifier rather than the (1) and (2) I did at first for the repeating years.
+
+Optimized the split script so that it pulls the necessary information from the file itself and not from an arbitrary year counter variable, thus making it more expandable in the future, just have to set the ceiling on how high the years should go.
+
+Got caught up since I was missing a text file from 1961 and it took a while to realize that Dwight Eisenhower and John F. Kennedy both gave a speech in January of 1961 so I ended up having to add last names to all the files to make everything unique, but it will make calling specific files based on president a lot easier later on.
+
+8/28 Opening file within python interpreter using command execfile
+
+Just used matplotlib for an information visualization project and it seems easy to fit to my needs so I will be investigating further.
+
+Lost scope a bit and need to talk to Dr. Wilkins again to regain focus on what primary question is
+
+Reviewing notes from last semester’s meetings to get a better feel for the trajectory of this project. Also going to ask her about the balance between development and research
+
+9/3/17 - Began working with LaTeX. Downloaded and installed software, ran into a couple issues with running the LaTeX files and opening .xdvi files but there pdflatex opening worked out
+
+Command needed to open Preview from command line - “open -a Preview basic.pdf”
+
+Starting to create Prospectus using LaTeX
+
+9/4/17 - Started using LaTeX to format thesis. Starting rough draft with cursory information and starting to research state of the union addresses.
+
+9/5/17 - turned in first draft to Dr. Wilkins and got feedback on it. Going to revise it for next week and decide on a second reader and present them with the prospectus
+
+Going to format thesis more like a thesis using the OleMiss.sty file
+
+9/11/17 - Formatted thesis with OleMiss.sty file and also got bibtex working
+
+Per Dr. Wilkins suggestion going to rethink how I have the methodology constructed right now to see if there is a better approach
+
+Original: 
+*/
+The approach that is going to be taken is to first explicitly define the political spectrum based on political science research and theory to ensure the spectrum will be accurate.
+In order to classify the Presidential candidates on a spectrum there will first have to be a spectrum.
+This will require some research in to political identification and some insight in to key phrases and ideologies that would indicate where someone would fall if they said those words or phrases.
+This will have to be an intuitive spectrum as the political parties have shifted over time and with them the underlying ideologies have shifted as well.
+Once the spectrum has been constructed, a sample of Presidents will be chosen and their language analyzed and they will be placed manually on the spectrum, pulling out the words and phrases they use to specifically classify them on the spectrum to get a baseline of where each President should fall.
+Afterwards, the speeches of the Presidents that are left will be processed and the patterns of speech will be analyzed and each president will be placed upon the spectrum based on the frequency of certain words and phrases in their speech.
+The outcome will be tested to see how accurate the estimation of the program is to where the Presidents actually fall in the political spectrum.
+*/
+
+Rewrote methodology using lexicon and I feel a lot better about it and think it’ll be stronger
+
+9/12/17 - Dr. Hassan agreed to be my second reader. I went and spoke with him for about half an hour and he had a lot of useful suggestions and is optimistic about the exploratory part of the thesis but hesitant about the political spectrum part and suggested doing a test case of 5 presidents and see if I can get any meaningful results out of it.
+
+9/14/17 - Dr. Brown emailed me back and he will meet with me on Monday at 3 pm.
+
+9/18/17 - Met with Dr. Dowling and discussed possible methodologies and what the best approach might be. He gave a lot of good insight into the more political science minded approach
+
+9/20/17 - Completed my second revision of my draft and sent it to Dr. Wilkins. Researched some natural language processing resources that have similar functionality to see how I should structure my program. Going to talk to Dr. Wilkins tomorrow to determine the best approach to calculating political ideology whether it be crafting my own dictionary or implementing a word usage approach akin to wordfish.
+
+9/27/17 - execfile(“nltk_initialize.py”)
+
+9/30/17 - created dictionary.py that goes through each file and pulls out the most common meaningful words, created a common words file to remove articles and other common words that don’t have an ideological slant.
+
+10/8/17 - Removing more common words and refining list
+
+10/9/17 - Added estimated dictionary values based on historical evidence and traditional ideological key terms. Will create new .py file for determining political ideology score for each president. Determined raw political ideology score. Words more easily identified with conservative leaning so each president ended up being conservative and the only Liberal president that appeared was George Washington’s first address. Political dictionary needs to be heavily refined or thrown out entirely, which can be replaced by the NLTK contextual approach.
+
+10/15/17 - Creating tone.py and tone-graph.py. Tone.py outputs the sentiment score of each of the Presidential addresses into an array, as well as the YYYYMM key for each speech. The graph uses matplotlib to show the scatter plot and it looks like there is no apparent correlation from looking at the graph, but going to split it up by President to analyze it as a more micro level to see if there are any changes. Going to attempt to color code the larger graph by president to make the grouped ones easier to see since it is easier to get lost in the colors as of now.
+
+10/16/17 - Changed tone.py so that each list was a list of lists so each index refers to each president, that way I could iterate through the three lists and scatter plot the YYYYMM of their speeches as well as the respective sentiment score for each president and then each dot is color coded based on President and labeled in the legend with their Last Name (graph-test.py). Also have an individualized tone-graph.py that asks for the last name of a President and outputs an individual Graph for just that president’s addresses
+
+10/23/17 - Created hover on each point in the visualization and added an interactive legend that you can select and deselect points to show. Integrated word cloud in to a webpage and figured out a way to dynamically pull the value from two dropdowns and pull the correct JSON file. For next week need to integrate the two programs in to one and also utilize firebase to dynamically pull filenames from file directory and populate dropdown dynamically then pull in the backend.
+
+10/29/17 - Created a FireStore Database that holds all of the values for each presidential address and for each of the terms of the president. Experimented with React some but got frustrated so switched over to using Angular2 to create the web app to hold all of my information. Angular2 dependencies and the way they serve files I couldn’t get the word cloud to dynamically show on the web page. Dr. Wilkins suggested creating a PNG of the word clouds and then serve the img files on the webpage since they are mostly static.
+
+11/7/17 - Scrapped Angular app in lieu of pure javascript and html to process word clouds. Experimented with HTML2Canvas to try and continue use of Angular by creating pngs of all the word clouds and then display them when that FireStore combo was selected, but proved problematic since HTML2Canvas doesn’t support rotated text and created black copies of the original text in the original position so it didn’t end up working out. Looking at rasterize.js as well but it showed similar problems. I switched back over to pure javascript to create the functions and it turned out so much better. I used static arrays to populate the dropdowns using .innerhtml calls. I also added a counter at the beginning value of each of the presidents to keep track of their index for populating the terms that each president has and then also for displaying their overall presidential word cloud so as to keep the names unique for both Adams’. For next week going to add the scatter plot to the website under sentiment analysis and display the data there as well, will look into .json visualizations.
+
+11/14/17 - Refined the sentiment analysis to take into account negators and modifiers and also split out each sentence in to major categories and flagged each sentence based on keywords and then created sub scores for each category for each president, creating a vector of scores for each president. Created a normalized file from -1 to 1, very easy to do, under normal-tone.py. refined-tone.py is the new tone implementation and refined-bin-tone.py is the one that has them split into categories.
+
+12/15/17 - Wrote Research Proposal for ACM conference
+
+2/1/17 - Wrote Naives Bayes Classifer program called Classification.py that wasn't super successful in guessing names but did work successfully and the concept is there, just need to figure out the numbers better
+
+2/8/17 - Adding neural network to machine learning program classification.py and running in to issues with lists of lists in the program. A lot of finagling has to be done in order to get it in the correct format to process it. Randomization and zipping and shuffling is difficult. Ended up not using it in the final product, utilized leave-one-out cross-validation to check the accuracy of the calculations, got a much higher rate on the neural network than the Naives Bayes Classifier
+
+Future work: look on lexicon and identify based on categories, better than random guess but not better than guessing predominant class
+
+Parameter for Naives Bayes
+
+Discretize output in to bins (education - high and low - can break it off in to chunks)
+
+Ideally, don't know of a discretization algorithm - look for gaps and give it a higher score for gaps
+Take range of numbers and discretize 
+
+Discretization algorithm

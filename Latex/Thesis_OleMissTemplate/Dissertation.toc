@@ -1,0 +1,24 @@
+\contentsline {chapter}{ABSTRACT}{ii}{Doc-Start}
+\contentsline {chapter}{DEDICATION}{iii}{Doc-Start}
+\contentsline {chapter}{ACKNOWLEDGEMENTS}{iv}{Doc-Start}
+\contentsline {chapter}{LIST OF FIGURES}{vi}{Doc-Start}
+\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ INTRODUCTION}{1}{chapter.1}
+\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ BACKGROUND}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Sentiment Analysis}{2}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Definition}{2}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Natural Language Processing}{3}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Complications with Text Data}{3}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Lexicon}{4}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Alternative Sentiment Analysis Approaches}{4}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Process}{5}{subsection.2.1.6}
+\contentsline {subsubsection}{\numberline {2.1.6.1}Topic Classifier Sets}{6}{subsubsection.2.1.6.1}
+\contentsline {section}{\numberline {2.2}Information Visualization}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Line Plot}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Word Cloud}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}D3}{8}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}State of the Union Addresses}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Change in Purpose of State of the Union Address}{9}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Presidential Personality}{10}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Summary of Data}{10}{subsection.2.3.3}
+\contentsline {chapter}{BIBLIOGRAPHY}{12}{subsection.2.3.3}
+\contentsline {chapter}{VITA}{14}{chapter*.1}

@@ -1,0 +1,130 @@
+% This latex thesis example was modifed from that used in University of Michigan by Zhangping Wei (PhD student at NCCHE, OleMiss) during Feb. 2013.
+% The Graduate School hasn't accept this version as the offical LaTeX thesis/dissertation template yet.
+% I have tried my best to make it consistency with their requirements, but there is still NO WARRANTLY AT ALL about the correctness. Use it at your risk!
+% The copyright belongs to the original author(s), you can find the original version at:
+% http://aoss.engin.umich.edu/pages/current/dissertation-template.
+% Have fun, folks!
+
+\documentclass[reqno,12pt,oneside,letter]{report} % right-side equation numbering, 12 point font, print one-sided 
+%\documentclass[reqno,12pt,twoside,openright,letter]{report} % right-side equation numbering, 12 point font, print two-sided, Chapters start on odd pages.
+\special{papersize=8.5in, 11in}	% the size of US lettler paper
+\usepackage{OleMiss}         % dissertation style file modified from Rackham thesis style file
+\usepackage[intlimits]{amsmath} % Puts the limits of integrals on top and bottom
+\usepackage{amsxtra}     % Use various AMS packages
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphics}    % Add some packages for figures. Read epslatex.pdf on ctan.tug.org
+\usepackage{rotating}
+%\usepackage{color}
+%\usepackage{epsfig}
+%\usepackage{subfigure}  % To make subfigures. Read subfigure.pdf on ctan.tug.org
+\usepackage{verbatim}
+\usepackage{natbib}      % Allows you to use BibTeX
+\usepackage[printonlyused]{acronym} % For the List of Abbreviations. Read acronym.pdf on ctan.tug.org
+\usepackage{setspace}    % Allows you to specify the line spacing
+\usepackage{hyperref}
+% Z.Wei
+\usepackage{comment}
+\usepackage[normal,labelsep=period]{caption}
+
+\doublespacing           % \onehalfspacing for 1.5 spacing, \doublespacing for 2.0 spacing.
+\newcommand{\sun}{\ensuremath{\odot}} % sun symbol is \sun
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% If printing two-sided, this makes sure that any blank page at the 
+% end of a chapter will not have a page number. 
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother 
+
+\makeatletter
+\newcommand{\rmnum}[1]{\romannumeral #1}
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\setlength{\parindent}{0.5in}
+\bibliographystyle{Bibfiles/agu04}    % Set the bibliography style: agu04.
+
+% Title page
+\titlepage{SENTIMENT OF THE UNION}{Honors College Thesis}
+{Department of Computer and Information Science}	% Change it to your Department name
+{by \\
+Chase Rydeen\\
+May 2018}	% The graduate Date
+
+% Begin the front matter as required.
+\initializefrontsections
+
+% Optional Frontispiece
+%\frontispiece{\includegraphics[width=6in]{Intro/Happy} Find a cool picture to go here.}
+
+% Optional, but recommended, Copyright page
+\copyrightpage{Copyright}{Chase Rydeen}
+
+% Page numbering. If you don't include a frontispiece or copyright page, you'll need to change this for two-sided printing.
+\makeatletter
+\if@twoside \setcounter{page}{4} \else \setcounter{page}{1} \fi
+\makeatother
+
+% Optional in-dissertation Abstract Page
+\startabstractpage
+\input{Preamble/Abstract}
+\label{Abstract}
+
+% Optional Dedication page
+\startdedicationspage
+\input{Preamble/Dedication}
+\label{Dedication}
+
+% Optional Acknowledgements page
+\startacknowledgementspage
+\input{Preamble/Acknowledgements}
+\label{Acknowledgements}
+
+% Optional Preface page
+%\startprefacepage
+%\input{Preface}
+%\label{Preface}
+
+% Table of contents, list of figures, etc.
+\tableofcontents     % Required
+\listoffigures       % Required if there is more than one figure
+%\listoftables        % Required if there is more than one table
+%\listofmaps          % Required if there is more than one map
+%\listofappendices    % Required if there is more than one appendix
+%\listofabbreviations % Optional. Abbreviations should be stored in a file named abbr.tex
+
+\startthechapters 
+% The individual files for each of the chapters are put here.
+% Save each chapter of your thesis to a seperate tex file
+% and then use the \input command to include this file in your
+% thesis.  For instance you can save a file to "intro.tex" and 
+% then type \input{intro}. 
+
+ \chapter{INTRODUCTION}
+ \label{chap:Introduction}
+ \input{Chapter1/Chapter1}
+
+
+ \chapter{BACKGROUND}
+ \label{chap:Background}
+ \input{Chapter2/chapter2}
+% if you need more chapters, uncomment the "comment", and copy and paste, that's it!
+
+
+\startbibliography
+ \begin{singlespace} % Bibliography must be single spaced
+  \bibliography{Bibfiles/hydro}   % Use the BibTeX file ``References.bib''.
+ \end{singlespace}
+
+\startvitapage
+\input{Preamble/Vita}
+
+\end{document}

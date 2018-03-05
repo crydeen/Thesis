@@ -1,0 +1,129 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 SEP 2017 20:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**prospectus
+(./prospectus.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./OleMiss.sty
+ 
+Substyle `rac' for Rackham dissertation.
+ 
+\c@map=\count88
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count89
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+
+LaTeX Warning: Unused global option(s):
+    [reqno,letter].
+
+(./prospectus.aux)
+\openout1 = `prospectus.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+ [1
+
+
+Non-PDF special ignored!{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/upd
+map/pdftex.map}] [2] [3] [4] [5] (./prospectus.bbl [6]
+Underfull \hbox (badness 10000) in paragraph at lines 22--31
+[]\OT1/cmr/m/n/12 [Slapin u. Proksch 2008] \OT1/cmr/m/sc/12 Slapin\OT1/cmr/m/n/
+12 , Jonathan B. ; \OT1/cmr/m/sc/12 Proksch\OT1/cmr/m/n/12 , Sven-Oliver:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--31
+\OT1/cmr/m/n/12 A Scal-ing Model for Es-ti-mat-ing Time-Series Party Po-si-tion
+s from Texts.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--31
+\OT1/cmr/m/n/12 In: \OT1/cmr/m/it/12 Amer-i-can Jour-nal of Po-lit-i-cal Sci-en
+ce \OT1/cmr/m/n/12 52 (2008), Nr. 3, 705--722.
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 22--31
+\OT1/cmtt/m/n/12 http://dx.doi.org/10.1111/j.1540-5907.2008.00338.x\OT1/cmr/m/n
+/12 . --  DOI 10.1111/j.1540--
+ []
+
+
+Underfull \hbox (badness 4120) in paragraph at lines 33--41
+[]\OT1/cmr/m/n/12 [Teten 2003] \OT1/cmr/m/sc/12 Teten\OT1/cmr/m/n/12 , Ryan L.:
+  Evo-lu-tion of the Mod-ern Rhetor-i-cal Pres-i-
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 33--41
+\OT1/cmr/m/n/12 dency: Pres-i-den-tial Pre-sen-ta-tion and De-vel-op-ment of th
+e State of the Union
+ []
+
+
+Underfull \hbox (badness 6300) in paragraph at lines 33--41
+\OT1/cmr/m/n/12 Ad-dress.  In: \OT1/cmr/m/it/12 Pres-i-den-tial Stud-ies Quar-t
+erly \OT1/cmr/m/n/12 33 (2003), Nr. 2, 333--346.
+ []
+
+) [7
+
+] (./prospectus.aux) ) 
+Here is how much of TeX's memory you used:
+ 672 strings out of 492995
+ 7968 string characters out of 6132704
+ 66331 words of memory out of 5000000
+ 4290 multiletter control sequences out of 15000+600000
+ 5361 words of font info for 20 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 22i,4n,21p,413b,192s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt12.pfb>
+Output written on prospectus.pdf (7 pages, 70305 bytes).
+PDF statistics:
+ 48 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,1 @@
+"{if(match($0, /^\*/, k)){name=1789}} {print >name\".txt\" }" 
