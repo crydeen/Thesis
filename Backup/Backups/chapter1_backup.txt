@@ -1,0 +1,10 @@
+Language is our main way of communication and the words an individual chooses to express their ideas can be very telling about their mood and opinion towards a particular subject or issue.
+This is extremely pertinent for the President of the United States as their words and messages set the tone for the United States as a whole, and their words can often be analyzed to look for further meaning in the things that they say.
+This analysis has the potential to reveal underlying themes and patterns of speech in how president's speak and what their word choice indicates about the State of the United States and also how they view certain issues and topics.
+The driving force behind the research conducted here was to see if there was a way to reliably predict a president's political party purely based on their words they use in their State of the Union Addresses.
+This research can extend far beyond this central question as well, expanding to include more data sources to increase the accuracy of the predictions.
+On top of this, there is potential to predict further characteristics beyond political party such as ideology and other personality traits of the speaker.
+
+The other crucial part of this research is more historical in nature in that each sentiment score derived for a president must be contextualized by the important historical events that occurred during their presidency.
+The biggest challenge here being separating out the relative importance of the president's own outlook on the world versus that of the event itself.
+Some presidents may have a more positive tone and outlook on the world and try to use their State of the Union address to encourage the public even if the events of the time may be dire such as the Great Depression, so that will be an interesting challenge to weigh the relative importance of each.

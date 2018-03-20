@@ -1,8 +1,79 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{Aggarwal and Zhai(2012)}]{aggarwal2012mining}
+Aggarwal, C.~C., and C.~Zhai (2012), \textit{Mining text data}, Springer
+  Science \& Business Media.
+
+\bibitem[{Bird and Loper(2004)}]{bird2004nltk}
+Bird, S., and E.~Loper (2004), Nltk: The natural language toolkit,
+  \doi{10.3115/1219044.1219075}.
+
+\bibitem[{Bostock et~al.(2011)Bostock, Ogievetsky, and Heer}]{bostock2011d3}
+Bostock, M., V.~Ogievetsky, and J.~Heer (2011), D3 data-driven documents,
+  \textit{IEEE Transactions on Visualization and Computer Graphics}, 17(12),
+  2301--2309, \doi{10.1109/TVCG.2011.185}.
+
+\bibitem[{Fekete et~al.(2008)Fekete, Van~Wijk, Stasko, and
+  North}]{fekete2008value}
+Fekete, J.-D., J.~J. Van~Wijk, J.~T. Stasko, and C.~North (2008), The value of
+  information visualization, in \textit{Information visualization}, pp. 1--18,
+  Springer.
+
+\bibitem[{Laver et~al.(2003)Laver, Benoit, and Garry}]{laver2003extracting}
+Laver, M., K.~Benoit, and J.~Garry (2003), Extracting policy positions from
+  political texts using words as data, \textit{American Political Science
+  Review}, 97(2), 311--331.
+
+\bibitem[{Liddy(2001)}]{liddy2001natural}
+Liddy, E.~D. (2001), Natural language processing.
+
+\bibitem[{Liu(2012)}]{liu2012sentiment}
+Liu, B. (2012), Sentiment analysis and opinion mining, \textit{Synthesis
+  lectures on human language technologies}, 5(1), 1--167.
+
+\bibitem[{Riloff et~al.(2013)Riloff, Qadir, Surve, De~Silva, Gilbert, and
+  Huang}]{riloff2013sarcasm}
+Riloff, E., A.~Qadir, P.~Surve, L.~De~Silva, N.~Gilbert, and R.~Huang (2013),
+  Sarcasm as contrast between a positive sentiment and negative situation, in
+  \textit{Proceedings of the 2013 Conference on Empirical Methods in Natural
+  Language Processing}, pp. 704--714.
+
+\bibitem[{Somasundaran and Wiebe(2010)}]{somasundaran2010lexicon}
+Somasundaran, S., and J.~Wiebe (2010), Recognizing stances in ideological
+  on-line debates, pp. 116--124.
+
+\bibitem[{Taboada et~al.(2011)Taboada, Brooke, Tofiloski, Voll, and
+  Stede}]{taboada2011lexicon}
+Taboada, M., J.~Brooke, M.~Tofiloski, K.~Voll, and M.~Stede (2011),
+  Lexicon-based methods for sentiment analysis, \textit{Computational
+  linguistics}, 37(2), 267--307.
+
+\bibitem[{TETEN(2003)}]{teten2003evolution}
+TETEN, R.~L. (2003), Evolution of the modern rhetorical presidency:
+  Presidential presentation and development of the state of the union address,
+  \textit{Presidential Studies Quarterly}, 33(2), 333--346,
+  \doi{10.1111/j.1741-5705.2003.tb00033.x}.
+
+\bibitem[{Wilson et~al.(2005{\natexlab{a}})Wilson, Wiebe, and
+  Hoffmann}]{wilson2005contextual}
+Wilson, T., J.~Wiebe, and P.~Hoffmann (2005{\natexlab{a}}), Recognizing
+  contextual polarity in phrase-level sentiment analysis, in
+  \textit{Proceedings of the Conference on Human Language Technology and
+  Empirical Methods in Natural Language Processing}, HLT '05, pp. 347--354,
+  Association for Computational Linguistics, Stroudsburg, PA, USA,
+  \doi{10.3115/1220575.1220619}.
+
+\bibitem[{Wilson et~al.(2005{\natexlab{b}})Wilson, Wiebe, and
+  Hoffmann}]{wilson2005recognizing}
+Wilson, T., J.~Wiebe, and P.~Hoffmann (2005{\natexlab{b}}), Recognizing
+  contextual polarity in phrase-level sentiment analysis, in
+  \textit{Proceedings of the conference on human language technology and
+  empirical methods in natural language processing}, pp. 347--354, Association
+  for Computational Linguistics.
 
 \end{thebibliography}

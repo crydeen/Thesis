@@ -25,8 +25,8 @@ Some President's may see the State of the Union as a chance to rally the nation 
 It is important to have an understanding of the speech data itself before diving in to this research, since otherwise it won't be as meaningful and will be harder to draw conclusions from it.
 The full statistical summary for the data can be found in Table \ref{stat:one}.
 This can be explored to search for trends in the data and familiarize oneself with an overall perspective on the data.
-Some information of note: 
-There are a total of 230 Presidential Addresses given by 42 Presidents, making the average number of addresses per president 5. 
+Some information of note:
+There are a total of 230 Presidential Addresses given by 42 Presidents, making the average number of addresses per president 5.
 There are 26 Republicans and 16 Democrats , which makes their percentages 62\% and 38\%, respectively.
 The first three columns are self-explanatory but the latter two may require some additional information to be understood correctly.
 \subsection{Lexical Diversity}
@@ -52,7 +52,7 @@ You can see how the formula is used in Equation \ref{eq1}.
  \hline
  President & \# of Addrs. & Avg \# Words & Lex Diversity & Grade Level \\
  \hline\hline
- George Washington & 8 & 2096.0 & 0.3762 & 18.55 \\ 
+ George Washington & 8 & 2096.0 & 0.3762 & 18.55 \\
  \hline
  John Adams & 4 & 1801.0 & 0.369 & 17.925 \\
  \hline

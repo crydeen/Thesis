@@ -3,9 +3,17 @@
 \BOOKMARK [0][-]{Doc-Start}{ACKNOWLEDGEMENTS}{}% 3
 \BOOKMARK [0][-]{Doc-Start}{LIST OF FIGURES}{}% 4
 \BOOKMARK [0][-]{chapter.1}{INTRODUCTION}{}% 5
-\BOOKMARK [0][-]{chapter.2}{BACKGROUND}{}% 6
-\BOOKMARK [1][-]{section.2.1}{Sentiment Analysis}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.2}{Information Visualization}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.3}{State of the Union Addresses}{chapter.2}% 9
-\BOOKMARK [0][-]{subsection.2.3.3}{BIBLIOGRAPHY}{}% 10
-\BOOKMARK [0][-]{chapter*.1}{VITA}{}% 11
+\BOOKMARK [0][-]{chapter.2}{CORPUS}{}% 6
+\BOOKMARK [1][-]{section.2.1}{State of the Union Addresses}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Statistical Summary}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Information Visualization}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.4}{Results}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{SENTIMENT ANALYSIS}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Sentiment Analysis}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Results}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{MACHINE LEARNING}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Topic Classifier Sets}{chapter.4}% 15
+\BOOKMARK [0][-]{chapter.5}{CONCLUSION}{}% 16
+\BOOKMARK [1][-]{section.5.1}{Conclusions}{chapter.5}% 17
+\BOOKMARK [0][-]{section.5.1}{BIBLIOGRAPHY}{}% 18
+\BOOKMARK [0][-]{chapter*.1}{VITA}{}% 19

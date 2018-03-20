@@ -1,0 +1,127 @@
+\section{Sentiment Analysis}
+The cornerstone for this thesis is sentiment analysis and this topic requires the definition of a lot of terms and concepts that are important to the research at hand.
+Sentiment Analysis in theory sounds rather simple, process text and pull out the meaning based on the content of what was processed, but there are many intricacies that need to be addressed to fully understand the entire process [\cite{liu2012sentiment}].
+
+\subsection{Definition}
+Sentiment Analysis refers to the use of natural language processing and text analysis to systematically identify, extract, quantify, and study affective states and subjective information [\cite{liu2012sentiment}].
+Sentiment Analysis has increased in popularity in recent years and is popular to use to review large sets of review / survey data to abstract major topics of conversation and controversy online.
+It can be an effective tool in summarizing a population's opinions and feelings towards certain issues and drawing conclusions from them.
+A basic task of sentiment analysis that can be leveraged into more complex tasks is determining the polarity of a sample of text data and classify it as positive, negative, or neutral [\cite{wilson2005recognizing}].
+The process behind sentiment analysis is important and can be complicated depending on how much information an analysis is trying to pull and how large of a dataset is involved, and before the process is addressed, there are certain principles and topics involved that need to be covered first.
+
+\subsection{Natural Language Processing}
+Natural Language Processing (NLP) is an important concept that is used heavily in sentiment analysis.
+NLP is primarily concerned with the interactions between human beings and computers and specifically how they process and discern the meaning of human language [\cite{liddy2001natural}].
+Natural Language Data is abundant in our world today in the Age of the Internet and the vastness of it makes NLP extremely important to implement effectively to aid in understanding this large dataset.
+NLP takes on the difficult task of processing large text data and attempting to quantify the text data in different ways.
+
+\subsubsection{Natural Language Toolkit}
+NLP is the concept and the implementation in this project is the Natural Language Toolkit (NLTK), which is a Python library that offers NLP methods to process text and extract meaningful trends and patterns from the text of interest.
+The NLTK is implemented using Python, which is a simple, yet powerful language with excellent functionality for processing linguistic data \cite{bird2004nltk}.
+Much of the meaning is derived using the NLTK but much of the processing is conducted in purely Python using lists of words to process meaning and sentiment.
+The task of processing text data comes with a few obstacles that can either obstruct meaning or complicate the processing by changing the meaning of words or phrases based on the context in which they reside.
+
+\subsection{Complications with Text Data}
+Text Data can be especially difficult to deal with and cause a lot of unforeseen issues when it is being processed.
+The inherent subjectivity of human language and speech is one of the largest obstacles that must be addressed when dealing with any text-based data.
+Much of the communication between human beings is subjective and it is up to the interpretation of the speaker and listener what the message is and they can have conflicting ideas on the meaning of some terms [\cite{aggarwal2012mining}].
+This potential for miscommunication is mirrored in NLP in that the determined meaning or value of some textual data could not be representative of the source it came from, and there is not an objective reference to the weight of words to confirm the correctness of any one interpretation of the textual data.
+
+Another important factor to consider when processing text data is sarcasm, which is extremely difficult to detect.
+Americans especially are known for their use of sarcasm and it can be sometimes impossible to parse such meaning out of text since the intonation is what indicates the sarcasm which is lost in purely text-based data.
+There are some subtle cues that can indicate sarcasm in text but it can really only consistently be caught if it is tagged as such [\cite{riloff2013sarcasm}].
+
+A third and final complication that often arises is considering the context in which the text resides [\cite{aggarwal2012mining}].
+Context is everything when examining how people speak and trying to accurately access the thoughts and opinions of the speaker so it is important to take this context into consideration when developing a sentiment analysis since it will affect any results that are achieved.
+Context here meaning the modifying words surrounding the word to be examined next in the analysis.
+Each word in a sample of text data can have any number of modifiers that can manipulate its meaning and fundamentally change what message it is conveying by adding certain words before or after the word.
+These modifiers can take on the form of intensifiers, such as very, that amplify the meaning of a word, 
+
+\subsection{Lexicon}
+There are several ways to conduct sentiment analysis, some of which do not require a lexicon but this research used a lexicon-based approach.
+An important tool that is necessary in conducting this analysis is a comprehensive lexicon.
+A lexicon is a database of words and accompanying features associated with each word [\cite{taboada2011lexicon}].
+These features associated with each word vary widely in what they say about the word, from part of speech to length to polarity score.
+The lexicon used in this research consists of a word and an associated sentiment score that is on the scale from -1.0 (negative) to 1.0 (positive), indicating how positive or negative the word is.
+These sentiment scores were compiled from several different lexicons and the results were compiled by surveying thousands of individuals and having them score a certain subset of words and combine those ratings into an average score for each word [\cite{somasundaran2010lexicon}].
+
+\subsection{Alternative Sentiment Analysis Approaches}
+There are other ways of conducting sentiment analysis without the use of a lexicon that can also be useful for conducting the analysis.
+The main alternative method is a comparative approach that compares each block of text data to one another and instead of giving them an objective score, ranks them according to a subset of rules that determine their ranking relative to the other samples of text [\cite{wilson2005contextual}].
+This approach puts much more focus on the context of what is being said and uses context to determine the polarity of language.
+This is the main approach used by many political science researchers, since it is far easier to compare politician's values relative to one another than use an objective dictionary to determine their stance on an issue. [\cite{laver2003extracting}]
+
+\subsection{Process}
+The process behind sentiment analysis, especially when it is lexicon-based, is rather simple to understand but there are a lot of hidden factors that must be considered.
+The most important and most influential part of this entire process is the lexicon, which was covered in the previous section.
+The lexicon is used as the basis for all the sentiment scores that are assigned in the analysis, thus its integrity and accuracy is central to the success of the analysis.
+The analysis is started by feeding in the text data to the program. 
+In this case, that text data was the Presidential State of the Union Addresses.
+This text data is split into an array, each index corresponding to an individual word.
+At this point, the text data is cleaned up, using assorted algorithms to handle punctuation and capitalization and other linguistic features that could complicate the sentiment score assignment.
+Once the data is cleaned, it is time to start the bulk of the sentiment score operation.
+Using nested for-loops, each individual word is compared to a list of "common" words to avoid wasting time and processing power on "the" and other non-notable words, and then each non-common word is compared to the lexicon the score for that individual score is recorded in an overall score variable.
+As each word is processed, this score variable is either incremented or decremented based on the value associated with said word in the lexicon, and also an overall counter variable is incremented each time, counting each individual word.
+After all the words have been processed, the total score that has been tabulated is then divided by the counter and that resulting number is the sentiment score for that selection of text.
+There are a couple of odds and ends that were glossed over that will be covered in the next sections since they were added after the initial algorithm was constructed that slightly influence it's behavior when encountering certain specialty words, and also classifying different topics within the body of text.
+
+\begin{singlespace}
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\KwIn{All State of the Union Addresses}
+\KwOut{The sentiment score for each Presidential Address for each category.}
+\BlankLine
+open all .txt files and store them in lists of special category trigger words\;
+\For{each address in the State of the Union Addresses}
+	{format address\;
+	split address in to sentences\;
+	\For{each sentence in the address}
+		{add sentence to 'overall' category\;
+		\If{sentence contains category trigger word}
+		{add sentence to category}
+	\For{each category}
+		{append list of sentences for that category to an overall list}
+	\For{each topic in the overall list}
+		{\For{each word in the topic}
+			{create word count for each word and store it in a dictionary\;
+			\If{previous word negator}
+				{increment negator counter for that word by one}
+			\If{previous word intensifier}
+				{increment intensifier counter for that word by one}
+			}
+		\For{each word in the dictionary}
+		{\If{word is in lexicon}
+		{\If{length of negators[word] != 0}
+		{Subtract length from total count for that word}
+		}
+		\If{length of intensifiers[word] != 0}
+		{Raise length number of scores to the power of 2}
+		Calculate the Sentiment Score by multiplying the number of occurences of the term by the score in the lexicon.
+		}
+		}
+	}
+	}
+	
+\caption{Sentiment Analysis Algorithm}
+\label{alg:one}
+\end{algorithm}
+\end{singlespace}
+
+\subsection{Scatter Plot}
+\begin{figure}
+  \includegraphics[width=\columnwidth]{images/Lineplot.png}
+  \caption{Scatter Plot}
+  \label{fig:lineplot1}
+\end{figure}
+Scatter plots are effective at showing data over time and it allows for users to see overall trends in tone and compare the scores across presidencies to see tonal shifts over a president's tenure or how two presidents compared to one another.
+The data set lends itself to this representation and the result is a nice longitudinal summary of presidential tones over the course of history.
+The data being displayed isn't objective and it must be taken with a grain of salt because sentiment analysis is far from an exact science and the lexicon is objective but also doesn't take in to account the change of meaning seen in some words.
+The time period for these changes is a relatively short period of time in the context of language so the differences shouldn't be greatly significant in the shifting of tone but it is something to note.
+The scatter plot itself also allows for interaction in that the user can hover over a point and get detailed information about it, such as the President's name, the term and year that address was delivered, as well as the exact sentiment score.
+
+\subsection{D3}
+D3.js (D3) is the JavaScript Library used to create the two visualizations mentioned in the previous sections.
+This tooltip functionality was used in the line plot demonstration mentioned previously to give extra information on each data point without cluttering the visualization itself.
+Another feature implemented using D3 is that if the user hovers over a President's name, then just that President's data points will be highlighted and the rest are faded out of the screen.
+
+\section{Results}
