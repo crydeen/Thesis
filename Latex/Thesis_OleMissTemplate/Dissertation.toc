@@ -27,11 +27,14 @@
 \contentsline {subsection}{\numberline {3.1.5}Alternative Sentiment Analysis Approaches}{15}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Process}{15}{subsection.3.1.6}
 \contentsline {subsection}{\numberline {3.1.7}Scatter Plot}{18}{subsection.3.1.7}
-\contentsline {subsection}{\numberline {3.1.8}D3}{19}{subsection.3.1.8}
-\contentsline {section}{\numberline {3.2}Results}{19}{section.3.2}
-\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ MACHINE LEARNING}{20}{chapter.4}
-\contentsline {section}{\numberline {4.1}Topic Classifier Sets}{20}{section.4.1}
-\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ CONCLUSION}{22}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{22}{section.5.1}
-\contentsline {chapter}{BIBLIOGRAPHY}{23}{section.5.1}
-\contentsline {chapter}{VITA}{26}{chapter*.1}
+\contentsline {subsection}{\numberline {3.1.8}D3}{18}{subsection.3.1.8}
+\contentsline {section}{\numberline {3.2}Results}{21}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Overall}{21}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Presidential Tone Trends}{21}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Historical Events}{21}{subsection.3.2.3}
+\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ MACHINE LEARNING}{24}{chapter.4}
+\contentsline {section}{\numberline {4.1}Topic Classifier Sets}{24}{section.4.1}
+\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ CONCLUSION}{26}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{26}{section.5.1}
+\contentsline {chapter}{BIBLIOGRAPHY}{27}{section.5.1}
+\contentsline {chapter}{VITA}{30}{chapter*.1}

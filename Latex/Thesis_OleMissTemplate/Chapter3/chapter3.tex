@@ -108,16 +108,38 @@ open all .txt files and store them in lists of special category trigger words\;
 \end{singlespace}
 
 \subsection{Scatter Plot}
-\begin{figure}
-  \includegraphics[width=\columnwidth]{images/Lineplot.png}
-  \caption{Scatter Plot}
-  \label{fig:lineplot1}
-\end{figure}
 Scatter plots are effective at showing data over time and it allows for users to see overall trends in tone and compare the scores across presidencies to see tonal shifts over a president's tenure or how two presidents compared to one another.
-The data set lends itself to this representation and the result is a nice longitudinal summary of presidential tones over the course of history.
+The data set lends itself to this representation and the result is a nice longitudinal summary of presidential tones over the course of history and you can see this scatter plot in Figure \ref{fig:scatterplot1}.
 The data being displayed isn't objective and it must be taken with a grain of salt because sentiment analysis is far from an exact science and the lexicon is objective but also doesn't take in to account the change of meaning seen in some words.
 The time period for these changes is a relatively short period of time in the context of language so the differences shouldn't be greatly significant in the shifting of tone but it is something to note.
 The scatter plot itself also allows for interaction in that the user can hover over a point and get detailed information about it, such as the President's name, the term and year that address was delivered, as well as the exact sentiment score.
+Figure \ref{fig:scatterplot2} shows the hover feature over a specific Presidential address and showing the detailed information of the president's name, number, party, and sentiment score.
+Figure \ref{fig:scatterplot3} shows the other hover feature wherein if a user hovers over a President's name then it shows all of their addresses and fades out the rest of them.
+Figure \ref{fig:scatterplot4} shows a different scatter plot with the same data but color coded based on a president's political party to show different trends that follow political party lines.
+
+\begin{figure}
+  \includegraphics[width=\columnwidth]{images/scatter_plot.png}
+  \caption{Scatter Plot}
+  \label{fig:scatterplot1}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\columnwidth]{images/hover_address.png}
+  \caption{Scatter Plot (Hover over Address)}
+  \label{fig:scatterplot2}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\columnwidth]{images/hover_president.png}
+  \caption{Scatter Plot (Hover over President Name)}
+  \label{fig:scatterplot3}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\columnwidth]{images/scatter_plot_party.png}
+  \caption{Scatter Plot Party Comparison}
+  \label{fig:scatterplot4}
+\end{figure}
 
 \subsection{D3}
 D3.js (D3) is the JavaScript Library used to create the two visualizations mentioned in the previous sections.
@@ -125,3 +147,44 @@ This tooltip functionality was used in the line plot demonstration mentioned pre
 Another feature implemented using D3 is that if the user hovers over a President's name, then just that President's data points will be highlighted and the rest are faded out of the screen.
 
 \section{Results}
+This sentiment analysis is important to consider when analyzing the addresses and produces some interesting trends to dissect and investigate.
+
+\subsection{Overall}
+Generally, the trend for all addresses is that they hover around 0.00 to 0.30 sentiment score, which is telling of the general approach and purpose of the State of the Union Address.
+The address is used to convey the problems and issues that are impacting the country, and also to inspire hope that the country is making progress and that it is thriving, which has more of the emphasis.
+This slightly positive average overall describes an overall positivity among the presidents in their address to the United States citizens to inspire hope and confidence while also tending to the negative aspects of their presidency to show that change will be made.
+
+\subsection{Presidential Tone Trends}
+There are some interesting trends to examine in the tone of each president over time during their presidency.
+The overwhelming trend tends to be a generally positive tone for the early addresses that gives way to a more negative tone as the stark realities of the presidency become more apparent and the frustrations of being President start to show their effect in their speeches.
+This trend does have some notable exceptions, with John Adams, Rutherford Hayes, and George Bush starting lower and expressing more positive sentiment throughout their Presidential addresses.
+George Bush is most likely caused by 9/11 and the lingering effects that it had on his outlook on the presidency and the world at that time, but he got generally more positive over the course of his addresses following 9/11.
+
+\subsection{Historical Events}
+A large compounding factor that can have a heavy-handed influence on presidential addresses are major historical events such as the Civil War, the World Wars, the Great Depression, and 9/11.
+These events were dark and negative and it is interesting to examine the general tone of the Presidents during these times to see how they approached these grave and serious topics.
+They could be very realistic and tell it like it is to be frank with the American people, or merely address the elephants in the room, but still espouse positivity to boost the morale of the country to keep them dedicated to whatever cause it is that they are fighting.
+The overall trends in positivity versus negativity that could have many compounding factors that can't be fully investigated without a full psychological breakdown of each of the presidential candidates.
+As such, the main consideration here is historical events since they are more outwardly facing and its easier to examine their external effects on the United States and the Presidency than examining the preconceptions and biases felt by each president.
+These trends do mirror closely to negative events coinciding with the addresses at the time, indicating the sensitivity of the Presidential outlook to major historical events.
+This isn't as true in the case of the Civil War as there aren't any major dips in President Lincoln's speeches, likely due to the fact that it was Americans fighting Americans and his role was to attempt to unite the two sides into one cohesive unit so he attempted to avoid any accusatory and divisive language.
+
+An interesting data point to draw attention to is that of FDR's two State of the Union addresses in 1942 and 1943, the only two Presidential Addresses to have a negative sentiment score in the entirety of the State of the Union's history, -0.01 and -0.005, respectively.
+This negativity shows signs of the hard times that was befallen during that time period in American History.
+FDR led the United States through the Great Depression, as well as World War II, and he won four presidential addresses, so the people respected him and his word [CITE].
+FDR was comfortable in his position in power and used this solidified power to talk frankly to the American People about the dark times that were surrounding them.
+World War II was one of the most tragic events to befall this entire world and the tone of the President, and thus, the United States, reflects that.
+
+Another interesting data point to pull out is that of George Bush's September 2001 Address, shortly after 9/11 had occurred.
+This was not a State of the Union address in the historical sense but it was needed given the events that had transpired so it is considered to be one.
+The overall negative sentiment score of this address (0.02) when compared to his generally positive other addresses shows the dark and serious times that were apparent in these times.
+George Bush addressed the people with sorrow and remorse and this language and purpose reflected itself in the tone of the words he chose to use in this address.
+This sadness, coupled with the calls for military action against the perpetrators of this tragedy tinged this address with negative and spiteful feelings, making it the third most negative address, and being an extreme outlier in Bush's sentiment scores.
+
+A third and final interesting point to examine is that of the very first State of the Union Address by George Washington in January of 1790.
+It is intriguing that the first State of the Union Address is actually the most positive of the entirety of the United States but from a sociological and historical perspective it does make sense.
+The United States is a young country and was in the state of being a democratic experiment since nobody knew if it would actually work [CITE - dem experiment].
+It took George Washington as the leader of this young nation to inspire hope and foster confidence in this new country that it will succeed and democracy will prevail.
+An important role that he didn't take lightly, as can be seen by the overwhelmingly positive approach he took to the first State of the Union address.
+Analyzing this in conjunction with his other sentiment scores is intriguing as they fall off sharply and he becomes generally more negative throughout his presidency, talking more of the stark realities of successfully building a strong country than the flowery patriotic speech of his first address.
+The trend does curl back up into generally more positive territory in his latter two addresses, an attempt to encourage the citizens and those who would assume his office in years to come with the confidence to drive America forward and make this democratic experiment a success.
