@@ -1,27 +1,26 @@
-\section{Sentiment Analysis}
 The cornerstone for this thesis is sentiment analysis and this topic requires the definition of a lot of terms and concepts that are important to the research at hand.
 Sentiment Analysis in theory sounds rather simple, process text and pull out the meaning based on the content of what was processed, but there are many intricacies that need to be addressed to fully understand the entire process [\cite{liu2012sentiment}].
 
-\subsection{Definition}
+\section{Definition}
 Sentiment Analysis refers to the use of natural language processing and text analysis to systematically identify, extract, quantify, and study affective states and subjective information [\cite{liu2012sentiment}].
 Sentiment Analysis has increased in popularity in recent years and is popular to use to review large sets of review / survey data to abstract major topics of conversation and controversy online.
 It can be an effective tool in summarizing a population's opinions and feelings towards certain issues and drawing conclusions from them.
 A basic task of sentiment analysis that can be leveraged into more complex tasks is determining the polarity of a sample of text data and classify it as positive, negative, or neutral [\cite{wilson2005recognizing}].
 The process behind sentiment analysis is important and can be complicated depending on how much information an analysis is trying to pull and how large of a dataset is involved, and before the process is addressed, there are certain principles and topics involved that need to be covered first.
 
-\subsection{Natural Language Processing}
+\section{Natural Language Processing}
 Natural Language Processing (NLP) is an important concept that is used heavily in sentiment analysis.
 NLP is primarily concerned with the interactions between human beings and computers and specifically how they process and discern the meaning of human language [\cite{liddy2001natural}].
 Natural Language Data is abundant in our world today in the Age of the Internet and the vastness of it makes NLP extremely important to implement effectively to aid in understanding this large dataset.
 NLP takes on the difficult task of processing large text data and attempting to quantify the text data in different ways.
 
-\subsubsection{Natural Language Toolkit}
+\subsection{Natural Language Toolkit}
 NLP is the concept and the implementation in this project is the Natural Language Toolkit (NLTK), which is a Python library that offers NLP methods to process text and extract meaningful trends and patterns from the text of interest.
 The NLTK is implemented using Python, which is a simple, yet powerful language with excellent functionality for processing linguistic data \cite{bird2004nltk}.
 Much of the meaning is derived using the NLTK but much of the processing is conducted in purely Python using lists of words to process meaning and sentiment.
 The task of processing text data comes with a few obstacles that can either obstruct meaning or complicate the processing by changing the meaning of words or phrases based on the context in which they reside.
 
-\subsection{Complications with Text Data}
+\section{Complications with Text Data}
 Text Data can be especially difficult to deal with and cause a lot of unforeseen issues when it is being processed.
 The inherent subjectivity of human language and speech is one of the largest obstacles that must be addressed when dealing with any text-based data.
 Much of the communication between human beings is subjective and it is up to the interpretation of the speaker and listener what the message is and they can have conflicting ideas on the meaning of some terms [\cite{aggarwal2012mining}].
@@ -37,7 +36,7 @@ Context here meaning the modifying words surrounding the word to be examined nex
 Each word in a sample of text data can have any number of modifiers that can manipulate its meaning and fundamentally change what message it is conveying by adding certain words before or after the word.
 These modifiers can take on the form of intensifiers, such as very, that amplify the meaning of a word, 
 
-\subsection{Lexicon}
+\section{Lexicon}
 There are several ways to conduct sentiment analysis, some of which do not require a lexicon but this research used a lexicon-based approach.
 An important tool that is necessary in conducting this analysis is a comprehensive lexicon.
 A lexicon is a database of words and accompanying features associated with each word [\cite{taboada2011lexicon}].
@@ -45,13 +44,13 @@ These features associated with each word vary widely in what they say about the 
 The lexicon used in this research consists of a word and an associated sentiment score that is on the scale from -1.0 (negative) to 1.0 (positive), indicating how positive or negative the word is.
 These sentiment scores were compiled from several different lexicons and the results were compiled by surveying thousands of individuals and having them score a certain subset of words and combine those ratings into an average score for each word [\cite{somasundaran2010lexicon}].
 
-\subsection{Alternative Sentiment Analysis Approaches}
+\section{Alternative Sentiment Analysis Approaches}
 There are other ways of conducting sentiment analysis without the use of a lexicon that can also be useful for conducting the analysis.
 The main alternative method is a comparative approach that compares each block of text data to one another and instead of giving them an objective score, ranks them according to a subset of rules that determine their ranking relative to the other samples of text [\cite{wilson2005contextual}].
 This approach puts much more focus on the context of what is being said and uses context to determine the polarity of language.
 This is the main approach used by many political science researchers, since it is far easier to compare politician's values relative to one another than use an objective dictionary to determine their stance on an issue. [\cite{laver2003extracting}]
 
-\subsection{Process}
+\section{Process}
 The process behind sentiment analysis, especially when it is lexicon-based, is rather simple to understand but there are a lot of hidden factors that must be considered.
 The most important and most influential part of this entire process is the lexicon, which was covered in the previous section.
 The lexicon is used as the basis for all the sentiment scores that are assigned in the analysis, thus its integrity and accuracy is central to the success of the analysis.
@@ -64,6 +63,10 @@ Using nested for-loops, each individual word is compared to a list of "common" w
 As each word is processed, this score variable is either incremented or decremented based on the value associated with said word in the lexicon, and also an overall counter variable is incremented each time, counting each individual word.
 After all the words have been processed, the total score that has been tabulated is then divided by the counter and that resulting number is the sentiment score for that selection of text.
 There are a couple of odds and ends that were glossed over that will be covered in the next sections since they were added after the initial algorithm was constructed that slightly influence it's behavior when encountering certain specialty words, and also classifying different topics within the body of text.
+The classification of topics is discussed further in the next chapter as it was used primarily for the learning algorithms.
+
+The entirety of the algorithm can be seen in Algorithm \ref{alg:one}.
+This includes topic classification which will be discussed in the next chapter more in detail.
 
 \begin{singlespace}
 \begin{algorithm}[H]
@@ -77,7 +80,7 @@ open all .txt files and store them in lists of special category trigger words\;
 	split address in to sentences\;
 	\For{each sentence in the address}
 		{add sentence to 'overall' category\;
-		\If{sentence contains category trigger word}
+		\If{sentence contains category trigger word \label{alg:one:topic}} 
 		{add sentence to category}
 	\For{each category}
 		{append list of sentences for that category to an overall list}
@@ -107,7 +110,7 @@ open all .txt files and store them in lists of special category trigger words\;
 \end{algorithm}
 \end{singlespace}
 
-\subsection{Scatter Plot}
+\section{Scatter Plot}
 Scatter plots are effective at showing data over time and it allows for users to see overall trends in tone and compare the scores across presidencies to see tonal shifts over a president's tenure or how two presidents compared to one another.
 The data set lends itself to this representation and the result is a nice longitudinal summary of presidential tones over the course of history and you can see this scatter plot in Figure \ref{fig:scatterplot1}.
 The data being displayed isn't objective and it must be taken with a grain of salt because sentiment analysis is far from an exact science and the lexicon is objective but also doesn't take in to account the change of meaning seen in some words.
@@ -141,7 +144,7 @@ Figure \ref{fig:scatterplot4} shows a different scatter plot with the same data 
   \label{fig:scatterplot4}
 \end{figure}
 
-\subsection{D3}
+\section{D3}
 D3.js (D3) is the JavaScript Library used to create the two visualizations mentioned in the previous sections.
 This tooltip functionality was used in the line plot demonstration mentioned previously to give extra information on each data point without cluttering the visualization itself.
 Another feature implemented using D3 is that if the user hovers over a President's name, then just that President's data points will be highlighted and the rest are faded out of the screen.
@@ -171,19 +174,19 @@ This isn't as true in the case of the Civil War as there aren't any major dips i
 
 An interesting data point to draw attention to is that of FDR's two State of the Union addresses in 1942 and 1943, the only two Presidential Addresses to have a negative sentiment score in the entirety of the State of the Union's history, -0.01 and -0.005, respectively.
 This negativity shows signs of the hard times that was befallen during that time period in American History.
-FDR led the United States through the Great Depression, as well as World War II, and he won four presidential addresses, so the people respected him and his word [CITE].
-FDR was comfortable in his position in power and used this solidified power to talk frankly to the American People about the dark times that were surrounding them.
+FDR led the United States through the Great Depression, as well as World War II, and he won four presidential elections, so the people entrusted him and listened to his words.
+FDR had the responsibility to convey to the American people the importance and seriousness of World War II as it was happening thousands of miles away from the United States and many Americans felt it wouldn't impact them so they shouldn't send troops to die in a war they aren't involved with[\cite{roosevelt1964four}].
 World War II was one of the most tragic events to befall this entire world and the tone of the President, and thus, the United States, reflects that.
 
 Another interesting data point to pull out is that of George Bush's September 2001 Address, shortly after 9/11 had occurred.
-This was not a State of the Union address in the historical sense but it was needed given the events that had transpired so it is considered to be one.
+This was not a State of the Union address in the historical sense but it was needed given the events that had transpired so it is considered to be one [\cite{bush2001911}].
 The overall negative sentiment score of this address (0.02) when compared to his generally positive other addresses shows the dark and serious times that were apparent in these times.
 George Bush addressed the people with sorrow and remorse and this language and purpose reflected itself in the tone of the words he chose to use in this address.
 This sadness, coupled with the calls for military action against the perpetrators of this tragedy tinged this address with negative and spiteful feelings, making it the third most negative address, and being an extreme outlier in Bush's sentiment scores.
 
 A third and final interesting point to examine is that of the very first State of the Union Address by George Washington in January of 1790.
 It is intriguing that the first State of the Union Address is actually the most positive of the entirety of the United States but from a sociological and historical perspective it does make sense.
-The United States is a young country and was in the state of being a democratic experiment since nobody knew if it would actually work [CITE - dem experiment].
+The United States is a young country and was in the state of being a democratic experiment since nobody knew if it would actually work.
 It took George Washington as the leader of this young nation to inspire hope and foster confidence in this new country that it will succeed and democracy will prevail.
 An important role that he didn't take lightly, as can be seen by the overwhelmingly positive approach he took to the first State of the Union address.
 Analyzing this in conjunction with his other sentiment scores is intriguing as they fall off sharply and he becomes generally more negative throughout his presidency, talking more of the stark realities of successfully building a strong country than the flowery patriotic speech of his first address.

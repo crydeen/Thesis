@@ -29,14 +29,17 @@ Some information of note:
 There are a total of 230 Presidential Addresses given by 42 Presidents, making the average number of addresses per president 5. 
 There are 26 Republicans and 16 Democrats , which makes their percentages 62\% and 38\%, respectively.
 The first three columns are self-explanatory but the latter two may require some additional information to be understood correctly.
+
 \subsection{Lexical Diversity}
-Lexical diversity is a metric that is used to represent the amount of unique words in any given passage of text.
+Lexical diversity is a metric that is used to represent the amount of unique words in any given passage of text and thus the overall complexity of the text [\cite{johansson2009lexical}].
 Lexical diversity is calculated by dividing the number of unique words in a text by the total length of the text.
 The resulting number is between 0 and 1 and the closer to 1 the text is, the more diverse its lexicon is, and thus it can be interpreted as being more complicated to read.
 The patterns here can be confounding by sheer length of a text but it remains an important metric to see how complex a particular selection of text is.
 The nature of this calculation makes it more interesting when comparing two pieces of text that are similar in length to see difference in lexicon between the two.
+
 \subsection{Grade Level}
 Calculating grade level is a slightly more involved process that involves an algorithm that computes grade level based on two factors: average sentence length and average syllables per word.
+This formula was created in 1975 to determine the readability of documents for Navy enlisted personnel [\cite{kincaid1975derivation}]
 The first factor is relatively easy to calculate, but the second is slightly more tricky as syllables can be a lot more difficult to distinguish in plain text processing fashion.
 Luckily, there is a Python plugin called textstat with a built-in Flesch-Kincaid function that has a corpus of syllabled words and it was used to calculate grade level.
 You can see how the formula is used in Equation \ref{eq1}.
@@ -136,7 +139,7 @@ You can see how the formula is used in Equation \ref{eq1}.
  \hline
  Barack Obama & 8 & 6738.0 & 0.2465 & 8.412 \\
  \hline
-  Donald Trump & 1 & 788 & 6344 & 0 \\
+  Donald Trump & 1 & 5199.0 & 0.3043 & 8.4 \\
  \hline
 \end{tabular}
 \end{center}
@@ -155,11 +158,11 @@ This line plot will be discussed more in-depth in the following section.
 
 
 \subsection{Word Cloud}
-A word cloud is a collage of words that displays word frequencies for a certain set of text data, with the relative size of each word being determined by the frequency with which that term is used in the text.
+A word cloud is a collage of words that displays word frequencies for a certain set of text data, with the relative size of each word being determined by the frequency with which that term is used in the text [\cite{heimerl2014word}].
 An example can be seen in Figure \ref{fig:wordcloud1} that shows the word cloud for all of Jimmy Carter's terms.
 A second example can be seen in Figure \ref{fig:wordcloud2} where a term is selected and the word cloud dataset is restricted to the contents of that particular presidential address.
 Word Clouds are an interesting visual since they provide quick reference to see what a President's most used terms are, as well as being another interesting way to engage the data in a slightly different context.
-Word Clouds themselves are often criticized since it is a poor way to visualize data and it is hard to objectively compare two words in a word cloud because the frequency values are encoded using area, which is a very difficult encoding for humans to interpret.
+Word Clouds themselves are often criticized since it is a poor way to visualize data and it is hard to objectively compare two words in a word cloud because the frequency values are encoded using area, which is a very difficult encoding for humans to interpret [\cite{cui2010context}].
 In this case, the word cloud is used merely to complement the existing line plot visualization that provides insight into the main purpose of the research, and the word cloud provides a different way of visualizing the data source itself.
 
 \begin{figure}
@@ -191,7 +194,7 @@ Table \ref{stat:one} has some intriguing patterns and trends to analyze and show
 
 \subsection{Average Address Length}
 The average length of the Presidential Address has changed drastically over time, as its purpose and importance fluctuated.
-George Washington, when he gave his first address, didn't think that it would be an occurring event, but thought it necessary to inform the citizens of the current state of affairs of the country, and this precedent was followed for much of the early history of the United States.
+George Washington, when he gave his first address, didn't think that it would be an occurring event, but thought it necessary to inform the citizens of the current state of affairs of the country, and this precedent was followed for much of the early history of the United States [\cite{freeman1948george}].
 The relatively short length of the early Presidential Addresses shows this, as it was a short and brief and meant to inform the people of what is happening in the country and was used primarily to disperse information to the citizens.
 This slowly began to change over the years and the change in purely the average number of words in the addresses indicates the increasing importance of the State of the Union address as a chance to communicate with the citizens at large and use that attention to push an agenda and connect with the voters.
 The State of the Union address became a much larger deal as President's used it to communicate with the entirety of the nation to ensure them of the success of the nation and its status, peaking with Theodore Roosevelt averaging almost 20,000 words per Presidential Address.
@@ -211,9 +214,9 @@ This provides more important insight in addresses that are similar length to one
 Another metric that complements Lexical Diversity that needs to be considered is Grade Level, which is computed using the Flesch Kincaid mentioned above.
 The scores seen here may seem rather high but it is understandable given the change in how Americans speak over time.
 Speakers in Early America were known to have a rather complicated way of talking and in order to make it to the office of President one had to be sufficiently educated to get elected by the public.
-This pattern shows in the high grade level throughout the early and mid history of the United States as a sophisticated approach was often taken to the State of the Union address to show off the strength and power of the United States [CITE].
-Also the early speeches were often given in front of Congress and with no means of distributing the speech widely, the intended audience mainly stayed Congress so the early Presidents did not really have a need to simplify their language to communicate effectively to the common man as that was done by the newspapers that talked about the Address [CITE].
+This pattern shows in the high grade level throughout the early and mid history of the United States as most of the early presidents were college-educated, a rarity of the time, and had a more sophisticated vocabulary than the common man.
+Also the early speeches were often given in front of Congress and with no means of distributing the speech widely, the intended audience mainly stayed Congress so the early Presidents did not really have a need to simplify their language to communicate effectively to the common man as that was done by the newspapers that talked about the Address [\cite{ziff1991writing}].
 The grade level gradually has decreased over time, which has as much to do about the greater reaches the address has, as it does with modern day media and how it collects sound bites of presidential addresses.
 In the modern era, when a President gives a speech, only a small amount of the actual speech is rebroadcasting when the media is discussing it, so the "sound bite" phenomenon has arisen in State of the Union addresses, which has had a transitive effect on the Flesch-Kincaid grade level calculation.
-The media only takes small snippets of what the President says to convey major policy positions, which has had the effect that most statements are kept short in order to summarize points and clearly convey what positions the President has in as short a form as possible.
+The media only takes small snippets of what the President says to convey major policy positions, which has had the effect that most statements are kept short in order to summarize points and clearly convey what positions the President has in as short a form as possible [\cite{paletz1977presidents}].
 And since one of the calculations for the grade level calculation is average words per sentence, this brings down the grade level of the speech as the President attempts to become more clear in their purpose and position to effectively convey their thoughts and feelings in a short sound bite that could be taken from their speech.

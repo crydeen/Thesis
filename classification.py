@@ -92,7 +92,8 @@ for index in range(len(overall)):
     targets.append([value])
 
 neural_counter = 0
-naives_counter = 0
+naive_counter = 0
+tree_counter = 0
 static_inputs = list(all_inputs)
 
 for index in range(len(parties)):
@@ -130,10 +131,19 @@ for index in range(len(parties)):
     train_set = featuresets
     classifier = nltk.NaiveBayesClassifier.train(train_set)
     decision_tree = nltk.DecisionTreeClassifier.train(train_set)
-    print(decision_tree.pseudocode(depth=1))
+    # print(decision_tree.pseudocode(depth=1))
     # print("Index" + str(index))
     if (nltk.classify.accuracy(classifier, test_set) == 1.0):
-        naives_counter = naives_counter + 1
+        naive_counter = naive_counter + 1
+        featuresets = []
+        train_set = []
+        classifier = 0
+    else:
+        featuresets = []
+        train_set = []
+        classifier = 0
+    if (nltk.classify.accuracy(decision_tree, test_set) == 1.0):
+        tree_counter = tree_counter + 1
         featuresets = []
         train_set = []
         classifier = 0
@@ -143,4 +153,5 @@ for index in range(len(parties)):
         classifier = 0
 
 print("Neural Network Accuracy: " + str(float(neural_counter)/float(len(parties))))
-print("Naives Bayes Classifier Accuracy: " + str(float(naives_counter)/float(len(parties))))
+print("Naive Bayes Classifier Accuracy: " + str(float(naive_counter)/float(len(parties))))
+print("Decision Tree Classifier Accuracy: " + str(float(tree_counter)/float(len(parties))))

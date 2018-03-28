@@ -9,11 +9,25 @@
 \BOOKMARK [1][-]{section.2.3}{Information Visualization}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.4}{Results}{chapter.2}% 10
 \BOOKMARK [0][-]{chapter.3}{SENTIMENT ANALYSIS}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Sentiment Analysis}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{Results}{chapter.3}% 13
-\BOOKMARK [0][-]{chapter.4}{MACHINE LEARNING}{}% 14
-\BOOKMARK [1][-]{section.4.1}{Topic Classifier Sets}{chapter.4}% 15
-\BOOKMARK [0][-]{chapter.5}{CONCLUSION}{}% 16
-\BOOKMARK [1][-]{section.5.1}{Conclusions}{chapter.5}% 17
-\BOOKMARK [0][-]{section.5.1}{BIBLIOGRAPHY}{}% 18
-\BOOKMARK [0][-]{chapter*.1}{VITA}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Definition}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Natural Language Processing}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.3}{Complications with Text Data}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.4}{Lexicon}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.5}{Alternative Sentiment Analysis Approaches}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.6}{Process}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.7}{Scatter Plot}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.8}{D3}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.9}{Results}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{MACHINE LEARNING}{}% 21
+\BOOKMARK [1][-]{section.4.1}{Topic Classifier Sets}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{Normalization}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{Neural Networks}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.4}{Naive Bayes Classifier}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.5}{Decision Tree Classifier}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.6}{Leave-one-out Cross-validation}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.7}{Results}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{CONCLUSION}{}% 29
+\BOOKMARK [1][-]{section.5.1}{Complications}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.3}{Final Thoughts}{chapter.5}% 32
+\BOOKMARK [0][-]{section.5.3}{BIBLIOGRAPHY}{}% 33

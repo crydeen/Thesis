@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -18,11 +18,64 @@ Bostock, M., V.~Ogievetsky, and J.~Heer (2011), D3 data-driven documents,
   \textit{IEEE Transactions on Visualization and Computer Graphics}, 17(12),
   2301--2309, \doi{10.1109/TVCG.2011.185}.
 
+\bibitem[{Bush(2001)}]{bush2001911}
+Bush, G.~W. (2001), 9/11 address to the nation, \textit{American Rhetoric}.
+
+\bibitem[{Cui et~al.(2010)Cui, Wu, Liu, Wei, Zhou, and Qu}]{cui2010context}
+Cui, W., Y.~Wu, S.~Liu, F.~Wei, M.~X. Zhou, and H.~Qu (2010), Context
+  preserving dynamic word cloud visualization, in \textit{Visualization
+  Symposium (PacificVis), 2010 IEEE Pacific}, pp. 121--128, IEEE.
+
+\bibitem[{Dietterich(1995)}]{dietterich1995overfitting}
+Dietterich, T. (1995), Overfitting and undercomputing in machine learning,
+  \textit{ACM Comput. Surv.}, 27(3), 326--327, \doi{10.1145/212094.212114}.
+
+\bibitem[{Dietterich(1998)}]{dietterich1998approximate}
+Dietterich, T.~G. (1998), Approximate statistical tests for comparing
+  supervised classification learning algorithms, \textit{Neural computation},
+  10(7), 1895--1923.
+
 \bibitem[{Fekete et~al.(2008)Fekete, Van~Wijk, Stasko, and
   North}]{fekete2008value}
 Fekete, J.-D., J.~J. Van~Wijk, J.~T. Stasko, and C.~North (2008), The value of
   information visualization, in \textit{Information visualization}, pp. 1--18,
   Springer.
+
+\bibitem[{Freeman et~al.(1948)Freeman, Carroll, and
+  Ashworth}]{freeman1948george}
+Freeman, D.~S., J.~A. Carroll, and M.~W. Ashworth (1948), \textit{George
+  Washington, a biography}, Scribner.
+
+\bibitem[{Hansen and Salamon(1990)}]{hansen1990neural}
+Hansen, L.~K., and P.~Salamon (1990), Neural network ensembles, \textit{IEEE
+  Transactions on Pattern Analysis and Machine Intelligence}, 12(10),
+  993--1001, \doi{10.1109/34.58871}.
+
+\bibitem[{Heimerl et~al.(2014)Heimerl, Lohmann, Lange, and
+  Ertl}]{heimerl2014word}
+Heimerl, F., S.~Lohmann, S.~Lange, and T.~Ertl (2014), Word cloud explorer:
+  Text analytics based on word clouds, in \textit{System Sciences (HICSS), 2014
+  47th Hawaii International Conference on}, pp. 1833--1842, IEEE.
+
+\bibitem[{Hepner et~al.(1990)Hepner, Logan, Ritter, and
+  Bryant}]{hepner1990artificial}
+Hepner, G., T.~Logan, N.~Ritter, and N.~Bryant (1990), Artificial neural
+  network classification using a minimal training set- comparison to
+  conventional supervised classification, \textit{Photogrammetric Engineering
+  and Remote Sensing}, 56(4), 469--473.
+
+\bibitem[{Johansson(2009)}]{johansson2009lexical}
+Johansson, V. (2009), Lexical diversity and lexical density in speech and
+  writing: a developmental perspective, \textit{Working Papers in Linguistics},
+  53, 61--79.
+
+\bibitem[{Kincaid et~al.(1975)Kincaid, Fishburne~Jr, Rogers, and
+  Chissom}]{kincaid1975derivation}
+Kincaid, J.~P., R.~P. Fishburne~Jr, R.~L. Rogers, and B.~S. Chissom (1975),
+  Derivation of new readability formulas (automated readability index, fog
+  count and flesch reading ease formula) for navy enlisted personnel,
+  \textit{Tech. rep.}, Naval Technical Training Command Millington TN Research
+  Branch.
 
 \bibitem[{Laver et~al.(2003)Laver, Benoit, and Garry}]{laver2003extracting}
 Laver, M., K.~Benoit, and J.~Garry (2003), Extracting policy positions from
@@ -36,12 +89,23 @@ Liddy, E.~D. (2001), Natural language processing.
 Liu, B. (2012), Sentiment analysis and opinion mining, \textit{Synthesis
   lectures on human language technologies}, 5(1), 1--167.
 
+\bibitem[{Murphy(2006)}]{murphy2006naive}
+Murphy, K.~P. (2006), Naive bayes classifiers, \textit{University of British
+  Columbia}, 18.
+
+\bibitem[{Paletz and Vinegar(1977)}]{paletz1977presidents}
+Paletz, D.~L., and R.~J. Vinegar (1977), Presidents on television: The effects
+  of instant analysis, \textit{Public Opinion Quarterly}, 41(4), 488--497.
+
 \bibitem[{Riloff et~al.(2013)Riloff, Qadir, Surve, De~Silva, Gilbert, and
   Huang}]{riloff2013sarcasm}
 Riloff, E., A.~Qadir, P.~Surve, L.~De~Silva, N.~Gilbert, and R.~Huang (2013),
   Sarcasm as contrast between a positive sentiment and negative situation, in
   \textit{Proceedings of the 2013 Conference on Empirical Methods in Natural
   Language Processing}, pp. 704--714.
+
+\bibitem[{Roosevelt(1964)}]{roosevelt1964four}
+Roosevelt, F.~D. (1964), \textit{Four freedoms speech}, Project Gutenberg.
 
 \bibitem[{Somasundaran and Wiebe(2010)}]{somasundaran2010lexicon}
 Somasundaran, S., and J.~Wiebe (2010), Recognizing stances in ideological
@@ -75,5 +139,14 @@ Wilson, T., J.~Wiebe, and P.~Hoffmann (2005{\natexlab{b}}), Recognizing
   \textit{Proceedings of the conference on human language technology and
   empirical methods in natural language processing}, pp. 347--354, Association
   for Computational Linguistics.
+
+\bibitem[{Wong(2015)}]{tzutsung2015validation}
+Wong, T.-T. (2015), Performance evaluation of classification algorithms by
+  k-fold and leave-one-out cross validation, \textit{Pattern Recogn.}, 48(9),
+  2839--2846, \doi{10.1016/j.patcog.2015.03.009}.
+
+\bibitem[{Ziff(1991)}]{ziff1991writing}
+Ziff, L. (1991), \textit{Writing in the New Nation: Prose, Print, and Politics
+  in the Early United States}, Yale University Press.
 
 \end{thebibliography}

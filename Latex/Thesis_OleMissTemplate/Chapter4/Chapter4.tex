@@ -1,7 +1,95 @@
+Machine Learning has emerged as booming field in Computer Science that provides a lot of opportunities for innovation and growth.
+The important thing to know about machine learning is what is in the name: teaching machines to learn.
+Through various approaches and algorithms it is possible to feed these machines input data and coach it to predict outcome events without being explicitly programmed to do so [\cite{hansen1990neural}].
+Machine Learning algorithms come with a caveat though that unfortunately this research falls to, and that is that effective machine learning is difficult because finding patterns is hard and often there isn't enough training data available to effectively train the algorithm to make predictions.
+The data here is large but rather minute compared to the large amounts of data normally used to train such learning algorithms.
+As such, the results achieved here aren't as strong as one would hope but this research establishes an approach that could be expanded and fed more data to achieve a more effective result.
+
+Machine Learning can refer to many different topics as it is a broad field, but in this research the learning algorithms used were Neural Network, Naive Bayes Classifer, and Decision Tree.
+All of these fall into the supervised learning category of machine learning wherein a training set of data is input, along with the target outcome that allows the models to use this data and output target to learn how to predict the outcome [\cite{dietterich1998approximate}].
+Before the learning algorithms are discussed more in-depth it is important to understand the data that was produced to create the learning set and how it will be used.
+
 \section{Topic Classifier Sets}
 An important part of the latter half of the preprocessing work for this research was the topic classifier sets.
 At first, the sentiment score was calculated for each presidential address with an overall score from -1 to 1, indicating their tone when delivering that address.
 After these were calculated, they were analyzed to look for trends in each president's tone to see if there were any interesting observations to be seen.
 As an additional breakdown to see if there was any more context-specific information that could help determine a president's political party, topic categories were added to diversify the scores of the president's even more.
 
-Four Presidential Addresses were chosen (Washington, Lincoln, Kennedy, Obama) and manually read through to discover what words were being used when talking about certain topics within the United States. The topics that were chosen were: crime, economy, education, energy, environment, family, foreign, government, job, religion, terrorism, and war. Text files were created using the trigger words for each major topic, the trigger words being pulled from the four addresses mentioned above and throughout various other addresses as they were skimmed through, that would add the entire sentence to an array named for what topic it was going to collect information on. This processing was conducted on every address and the sentiment score for each topic was found for each president, which resulted in a vector for each address that had their overall sentiment score and the sentiment score for each topic covered in the address. These scores for each address were then averaged together to create an overall vector for each president that could be used for classification and learning to learn their political party and predict others.
+Four Presidential Addresses were chosen (Washington, Lincoln, Kennedy, Obama) and manually read through to discover what words were being used when talking about certain topics within the United States.
+The topics that were chosen were: crime, economy, education, energy, environment, family, foreign, government, job, religion, terrorism, and war.
+Text files were created using the trigger words for each major topic, the trigger words being pulled from the four addresses mentioned above and throughout various other addresses as they were skimmed through, that would add the entire sentence to an array named for what topic it was going to collect information on.
+The implementation of this part of the algorithm can be seen in the previous algorithm and the trigger words are used starting in Algorithm \ref{alg:one} on line \ref{alg:one:topic}.
+This processing was conducted on every address and the sentiment score for each topic was found for each president, which resulted in a vector for each address that had their overall sentiment score and the sentiment score for each topic covered in the address.
+These scores for each address were then averaged together to create an overall vector for each president that could be used for classification and learning to learn their political party and predict others.
+This vector consisted of 14 values to be used for learning and those were the overall sentiment score, the sentiment scores calculated by each of the categories above, and the President's political party.
+
+\section{Normalization}
+As an added measure to exaggerate the differences between different vectors, each of the values was normalized from -1 to 1 using a simple normalization algorithm to provide the learning methods with more of a spread.
+This spread aided in distinguishing the minute differences that manifest themselves when the data is more spread out on a greater range.
+This Normalization method can be seen in Algorithm \ref{alg:two}.
+
+\begin{singlespace}
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\KwIn{Master array (an array of all the Presidential vectors)}
+\KwOut{The Master array (Now with all values normalized)}
+\BlankLine
+\For{array in master}
+	{old\ min = min(array)\;
+	old\ range = max(array) - old\ min\;
+    	new\ min = -1\;
+   	new\ range = 1.98\;
+    	array \= [float((n \- old\_min) / old\ range * new\ range + new\ min) for n in array]\;
+	new\_\ master.append(array)}
+\caption{Normalization Algorithm}
+\label{alg:two}
+\end{algorithm}
+\end{singlespace}
+
+\section{Neural Networks}
+Neural Networks take their name from the thing they are trying to mimic and that is of a human's brain and its biological neural networks that allow it to think and make decisions [\cite{hansen1990neural}].
+This concept was mirrored and use to produce neural networks that are fed input data that is labeled as either exhibiting a behavior or not exhibiting a behavior and using that to predict unknown inputs.
+The neural network has no inherent knowledge about the sentiment scores inserted into them, nor the political party label but it merely uses this data to learn patterns and uses these patterns to predict the political party of an unknown president using their sentiment scores.
+This first step of learning from data that is labeled is called the training phase.
+The training phase is important since the effectiveness of the algorithm relies entirely on the algorithm being trained correctly and effectively [\cite{hepner1990artificial}].
+The goal is to have a diverse set of inputs to give the algorithm a range of data, and then tell it how many times to repeat over the data to learn it.
+Finding the sweet spot of how many repetitions to utilize when having the algorithm learn the input data is very important, as too many repetitions causes the algorithm to confine itself to just the input data and it will lose the ability to abstract patterns to predict outcomes correctly, and too few repetitions prevents the algorithm from interacting with the data enough to draw meaningful patterns and conclusions from it to more effectively make predictions.
+
+\section{Naive Bayes Classifier}
+A Naive Bayes classifier functions in a very similar fashion to that of a neural network but there is less of a black box approach and more of a statistical approach.
+Using the input and target data, the Naive Bayes classifier uses a statistical model to predict values rather than strictly pattern recognition [\cite{murphy2006naive}].
+Naive Bayes has actually been discovered to handle small amounts of data better than neural networks so it was important to add here since both have their strong suits in predicting values.
+Naive Bayes is a much simpler algorithm which can limit its performance and effectiveness as it struggles to fit it's training data too closely, causing it to lose accuracy, whereas a neural network's complexity can actually overfit the data, which makes it weaker at predicting data outside the input data set.
+
+\section{Decision Tree Classifier}
+A Decision Tree Classifier functions in almost the exact same way that Naive Bayes does, but instead of predicting one output value, a decision tree examines the data to find steps it could take to make the correct prediction.
+Using these steps, a Decision Tree produces a list of steps it iterates through for each value and uses the outcome of each of the steps to predict the output value.
+This is effective with data that shows more trends and is sufficiently spread out, but this function struggled with this data as the decisions it made weren't clear and it overfit itself to the data which caused performance issues [\cite{dietterich1995overfitting}].
+The Decision Tree can be useful since it produces the learning algorithm in a human readable fashion that gives insight into how it makes a prediction that can allow for easier fine-tuning of the data and the algorithm to produce the best results.
+Much of machine learning can be a black box approach and this insight in to the inner workings of this algorithm simplifies it, but also limits it as this simplicity makes the algorithm not as effective in its predictions.
+
+\section{Leave-one-out Cross-validation}
+In order to evaluate the effectiveness of the algorithm, leave-one-out cross-validation was used.
+This validation method works by iterating over the data and hiding one of the points of data and uses the remaining data points to predict the hidden ones [\cite{tzutsung2015validation}].
+This is then repeated for each of the data points to be the hidden one.
+In this research, each address is represented as a vector of 14 numbers and a string, indicating the sentiment scores for each category as well as the overall score and the final value is the political party the president belongs to.
+Then, using these vectors, one of them is hidden, and the rest of the vectors are used to predict the values for the hidden vector.
+This process is then repeated for each of the vectors until all of them have been the hidden one and had their output predicted.
+This validation method ensures the algorithm is working properly and can properly predict a set of values using the existing data set.
+
+\section{Results}
+The results from the machine learning algorithms were less than stellar but provide interesting insight into the problems at hand regardless of this.
+The breakdown of Democrat and Republican is 38\% and 62\% respectively.
+So, ideally the desired accuracy for an effective learning algorithm would be reasonably above 62\% as you could successfully get 62\% every time by predicting Republican for every single president.
+Unfortunately, the results achieved for these machine learning algorithms were 59.5\% for the Neural Network and 35.71\% for the Naive Bayes Classifier.
+These accuracy numbers are less than satisfactory but there is much to say about the data being handled and how effective translating qualitative into quantitative data works.
+Text data at its heart is qualitative data since there is feeling and tone and intangible elements of speech that one can't quite quantify just yet but there is a way to do it.
+This research ran into many of these same roadblocks that come with translating text data into number data as some of this intangible meaning is lost and has to be reproduced mechanically to reach necessary conclusions about the data.
+
+These results are less than astounding but it is interesting how much better the neural network performed than the statistical measure of the Naive Bayes.
+So the patterns drawn from the neural network were stronger indicators of party alliance and even though the data source was small, the neural network performed stronger even though typically the opposite is the case when comparing these two approaches as was mentioned previously.
+The Decision Tree Classifier has the same accuracy as the Naive Bayes as they follow the same algorithm to achieve their results and the branches in the Decision Tree indicate why these values turned out rather low.
+Instead of creating a pattern to discern the vector values for each presidential party, the decision tree shows that it assigned the sentiment scores value to that category and if the values matched another one, it would look at the party of the matched one and assign it that, all the way down the list of categories.
+This overfitting caused the algorithm to focus too much on early results and not look at the whole data set before predicting a value which caused it to have an interestingly low prediction accuracy rate, worse than picking every party the same [\cite{dietterich1995overfitting}].
+The concept and algorithms themselves are interesting but the accuracy and results are less than convincing about whether this can adequately be proven as a relation.
+
