@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -12,6 +12,11 @@ Aggarwal, C.~C., and C.~Zhai (2012), \textit{Mining text data}, Springer
 \bibitem[{Bird and Loper(2004)}]{bird2004nltk}
 Bird, S., and E.~Loper (2004), Nltk: The natural language toolkit,
   \doi{10.3115/1219044.1219075}.
+
+\bibitem[{Borevitz()}]{presrepo}
+Borevitz, B. (), Presidential address repository,
+  \url{http://stateoftheunion.onetwothree.net/appendices.html#source},
+  accessed: 2017-09-30.
 
 \bibitem[{Bostock et~al.(2011)Bostock, Ogievetsky, and Heer}]{bostock2011d3}
 Bostock, M., V.~Ogievetsky, and J.~Heer (2011), D3 data-driven documents,
@@ -69,6 +74,11 @@ Johansson, V. (2009), Lexical diversity and lexical density in speech and
   writing: a developmental perspective, \textit{Working Papers in Linguistics},
   53, 61--79.
 
+\bibitem[{Juan et~al.(2013)Juan, Pute, and Xining}]{juan2013nndiagram}
+Juan, W., W.~Pute, and Z.~Xining (2013), {Soil infiltration based on bp neural
+  network and grey relational analysis}, \textit{{Revista Brasileira de
+  CiAtextordfemeninencia do Solo}}, 37, 97 -- 105.
+
 \bibitem[{Kincaid et~al.(1975)Kincaid, Fishburne~Jr, Rogers, and
   Chissom}]{kincaid1975derivation}
 Kincaid, J.~P., R.~P. Fishburne~Jr, R.~L. Rogers, and B.~S. Chissom (1975),
@@ -106,6 +116,11 @@ Riloff, E., A.~Qadir, P.~Surve, L.~De~Silva, N.~Gilbert, and R.~Huang (2013),
 
 \bibitem[{Roosevelt(1964)}]{roosevelt1964four}
 Roosevelt, F.~D. (1964), \textit{Four freedoms speech}, Project Gutenberg.
+
+\bibitem[{Rydeen()}]{visuals}
+Rydeen, C. (), Sentiment of the union visualizations,
+  \url{https://turing.cs.olemiss.edu/~dcrydeen/thesis/index.html}, accessed:
+  2017-10-15.
 
 \bibitem[{Somasundaran and Wiebe(2010)}]{somasundaran2010lexicon}
 Somasundaran, S., and J.~Wiebe (2010), Recognizing stances in ideological

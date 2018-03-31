@@ -19,28 +19,29 @@
 \contentsline {subsection}{\numberline {2.4.3}Grade Level}{10}{subsection.2.4.3}
 \contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ SENTIMENT ANALYSIS}{12}{chapter.3}
 \contentsline {section}{\numberline {3.1}Definition}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}Natural Language Processing}{13}{section.3.2}
+\contentsline {section}{\numberline {3.2}Natural Language Processing}{12}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Natural Language Toolkit}{13}{subsection.3.2.1}
 \contentsline {section}{\numberline {3.3}Complications with Text Data}{13}{section.3.3}
 \contentsline {section}{\numberline {3.4}Lexicon}{14}{section.3.4}
 \contentsline {section}{\numberline {3.5}Alternative Sentiment Analysis Approaches}{15}{section.3.5}
 \contentsline {section}{\numberline {3.6}Process}{15}{section.3.6}
-\contentsline {section}{\numberline {3.7}Scatter Plot}{18}{section.3.7}
-\contentsline {section}{\numberline {3.8}D3}{18}{section.3.8}
-\contentsline {section}{\numberline {3.9}Results}{21}{section.3.9}
+\contentsline {section}{\numberline {3.7}Scatter Plot}{17}{section.3.7}
+\contentsline {section}{\numberline {3.8}D3}{20}{section.3.8}
+\contentsline {section}{\numberline {3.9}Results}{20}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Overall}{21}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Presidential Tone Trends}{21}{subsection.3.9.2}
 \contentsline {subsection}{\numberline {3.9.3}Historical Events}{21}{subsection.3.9.3}
 \contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ MACHINE LEARNING}{24}{chapter.4}
 \contentsline {section}{\numberline {4.1}Topic Classifier Sets}{25}{section.4.1}
-\contentsline {section}{\numberline {4.2}Normalization}{26}{section.4.2}
-\contentsline {section}{\numberline {4.3}Neural Networks}{26}{section.4.3}
-\contentsline {section}{\numberline {4.4}Naive Bayes Classifier}{27}{section.4.4}
-\contentsline {section}{\numberline {4.5}Decision Tree Classifier}{27}{section.4.5}
-\contentsline {section}{\numberline {4.6}Leave-one-out Cross-validation}{28}{section.4.6}
-\contentsline {section}{\numberline {4.7}Results}{28}{section.4.7}
-\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ CONCLUSION}{30}{chapter.5}
-\contentsline {section}{\numberline {5.1}Complications}{30}{section.5.1}
-\contentsline {section}{\numberline {5.2}Future Work}{32}{section.5.2}
-\contentsline {section}{\numberline {5.3}Final Thoughts}{32}{section.5.3}
-\contentsline {chapter}{BIBLIOGRAPHY}{33}{section.5.3}
+\contentsline {section}{\numberline {4.2}Normalization}{28}{section.4.2}
+\contentsline {section}{\numberline {4.3}Neural Networks}{28}{section.4.3}
+\contentsline {section}{\numberline {4.4}Naive Bayes Classifier}{29}{section.4.4}
+\contentsline {section}{\numberline {4.5}Decision Tree Classifier}{30}{section.4.5}
+\contentsline {section}{\numberline {4.6}Leave-one-out Cross-validation}{30}{section.4.6}
+\contentsline {section}{\numberline {4.7}Results}{31}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Vector Analysis}{32}{subsection.4.7.1}
+\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ CONCLUSION}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Complications}{35}{section.5.1}
+\contentsline {section}{\numberline {5.2}Future Work}{37}{section.5.2}
+\contentsline {section}{\numberline {5.3}Final Thoughts}{37}{section.5.3}
+\contentsline {chapter}{BIBLIOGRAPHY}{38}{section.5.3}

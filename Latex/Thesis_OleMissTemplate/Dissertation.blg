@@ -7,45 +7,45 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in bird2004nltk
 Warning--empty journal in liddy2001natural
 Warning--empty journal in somasundaran2010lexicon
-You've used 28 entries,
+You've used 31 entries,
             3096 wiz_defined-function locations,
-            755 strings with 9271 characters,
-and the built_in function-call counts, 25932 in all, are:
-= -- 2954
-> -- 858
-< -- 23
-+ -- 475
-- -- 207
-* -- 1455
-:= -- 2384
-add.period$ -- 28
-call.type$ -- 28
-change.case$ -- 150
-chr.to.int$ -- 27
-cite$ -- 87
-duplicate$ -- 2706
-empty$ -- 1453
-format.name$ -- 279
-if$ -- 5313
+            772 strings with 9751 characters,
+and the built_in function-call counts, 27703 in all, are:
+= -- 3143
+> -- 918
+< -- 25
++ -- 504
+- -- 222
+* -- 1559
+:= -- 2577
+add.period$ -- 31
+call.type$ -- 31
+change.case$ -- 166
+chr.to.int$ -- 30
+cite$ -- 96
+duplicate$ -- 2884
+empty$ -- 1556
+format.name$ -- 299
+if$ -- 5667
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 276
-newline$ -- 91
-num.names$ -- 112
-pop$ -- 1175
+missing$ -- 299
+newline$ -- 100
+num.names$ -- 124
+pop$ -- 1253
 preamble$ -- 1
-purify$ -- 125
+purify$ -- 136
 quote$ -- 0
-skip$ -- 1725
+skip$ -- 1824
 stack$ -- 0
-substring$ -- 1067
-swap$ -- 2216
+substring$ -- 1128
+swap$ -- 2342
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 240
+type$ -- 267
 warning$ -- 3
-while$ -- 147
+while$ -- 158
 width$ -- 0
-write$ -- 317
+write$ -- 350
 (There were 3 warnings)
