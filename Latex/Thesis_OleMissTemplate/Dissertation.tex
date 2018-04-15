@@ -12,11 +12,14 @@
 \usepackage[intlimits]{amsmath} % Puts the limits of integrals on top and bottom
 \usepackage{amsxtra}     % Use various AMS packages
 \usepackage{amsthm}
+\usepackage{multicol}
 \usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{graphics}    % Add some packages for figures. Read epslatex.pdf on ctan.tug.org
 \usepackage{rotating}
+\usepackage{xhfill}
 \usepackage[linesnumbered]{algorithm2e}
+\usepackage{diagbox}
 %\usepackage{color}
 %\usepackage{epsfig}
 %\usepackage{subfigure}  % To make subfigures. Read subfigure.pdf on ctan.tug.org
@@ -27,6 +30,23 @@
 \usepackage{hyperref}
 % Z.Wei
 \usepackage{comment}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{fancyvrb}
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+ %
+ frame=none,  % top and bottom rule only
+ framesep=2em, % separation between frame and text
+ rulecolor=\color{gray},
+ %
+ %label=\fbox{\color{Black}crime.txt},
+ %labelposition=topline,
+ %
+ commandchars=\|\(\), % escape character and argument delimiters for
+                      % commands within the verbatim
+ commentchar=*        % comment character
+}
 % \usepackage[normal,labelsep=period]{caption}
 
 \doublespacing           % \onehalfspacing for 1.5 spacing, \doublespacing for 2.0 spacing.
@@ -54,7 +74,7 @@
 \bibliographystyle{Bibfiles/agu04}    % Set the bibliography style: agu04.
 
 % Title page
-\titlepage{SENTIMENT OF THE UNION}
+\titlepage{SENTIMENT OF THE UNION\break \textit{Analyzing Tone in Presidential State of the Union Addresses}}
 {by \\
 Chase Rydeen}
 {Oxford \\
@@ -100,7 +120,7 @@ May 2018}	% The graduation Date
 % Table of contents, list of figures, etc.
 \tableofcontents     % Required
 \listoffigures       % Required if there is more than one figure
-%\listoftables        % Required if there is more than one table
+\listoftables        % Required if there is more than one table
 %\listofmaps          % Required if there is more than one map
 %\listofappendices    % Required if there is more than one appendix
 %\listofabbreviations % Optional. Abbreviations should be stored in a file named abbr.tex
@@ -140,6 +160,16 @@ May 2018}	% The graduation Date
  \begin{singlespace} % Bibliography must be single spaced
   \bibliography{Bibfiles/hydro}   % Use the BibTeX file ``References.bib''.
  \end{singlespace}
+
+\startappendices
+\appendix{Complete Sentiment Analysis Tables}
+\label{appendix:tables}
+\input{Appendix/Tables}
+\appendix{Topic Classifier Text Files}
+\label{appendix:topics}
+\input{Appendix/Topics}
+%\label{chap:Appendix}
+%\input{Appendix/Appendix}
 
 %\startvitapage
 %\input{Preamble/Vita}

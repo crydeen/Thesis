@@ -107,7 +107,7 @@ A visualization for how a neural network works can be seen in Figure \ref{fig:nn
 
 \begin{figure}
 \begin{center}
-  \includegraphics[width=250pt]{images/nndiagram.jpg}
+  \includegraphics[width=250pt]{images/nndiagram.png}
   \caption{Neural Network Diagram}
   \label{fig:nndiagram}
   \end{center}
@@ -181,7 +181,8 @@ And George Bush had the reverse issue from Lincoln, where Bush's individual topi
 These vectors give interesting insight into the sentiment scores but also show some of the struggles that were encountered in creating these scores.
 
 A more in-depth lexicon and a more comprehensive list of trigger words for each category would produce stronger sentiment scores that would be more effective in training a learning algorithm.
-A list of all of the trigger words can be found [HERE - to be completed] in the Appendix, as well as the lexicon used to calculate the sentiment scores can be found [Here - to be completed].
+A list of all of the trigger words can be found in Appendix \ref{appendix:topics}, as well as the complete sentiment scores and Presidential vectors in Appendix \ref{appendix:tables}.
+The lexicon used to calculate the sentiment scores was too large to include in this thesis, but it can be viewed on the website cited here [\cite{visuals}].
 Another point of clarification that could improve the accuracy of the scores, as was mentioned above, would be to hone the polarity of objectively negative content involving war and other generally negative topics.
 In this research they were treated the same as other topics to keep the data consistent, but perhaps a more refined lexicon tailored to each topic could produce stronger results to make the predictions sought here.
 
@@ -190,7 +191,7 @@ In this research they were treated the same as other topics to keep the data con
 \begin{center}
  \begin{tabular}{||c || c | c||}
  \hline
- Last Name & Lincoln & Bush \\
+ \diagbox{Category}{President} & Lincoln & Bush \\
  \hline
  Overall & 0.1207 & 0.1341 \\ 
  \hline

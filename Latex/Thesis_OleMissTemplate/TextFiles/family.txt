@@ -1,0 +1,9 @@
+family
+children
+familial
+mother
+daughter
+son
+father
+home
+house

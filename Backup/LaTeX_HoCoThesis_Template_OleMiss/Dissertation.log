@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 MAR 2018 09:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 APR 2018 14:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -306,24 +306,29 @@ Excluding 'comment' comment. [1
 
 ]) [3
 
+] [4
+
 ]
-(./Preamble/Vita.tex) [4] (./Dissertation.aux) ) 
+APPENDIX A.
+(./Appendix/Appendix.tex) [5
+
+] (./Dissertation.aux) ) 
 Here is how much of TeX's memory you used:
- 3566 strings out of 492995
- 47806 string characters out of 6132704
+ 3568 strings out of 492995
+ 47833 string characters out of 6132704
  116107 words of memory out of 5000000
- 7025 multiletter control sequences out of 15000+600000
+ 7026 multiletter control sequences out of 15000+600000
  9238 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,7n,26p,562b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Dissertation.pdf (11 pages, 42344 bytes).
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti12.pfb>
+Output written on Dissertation.pdf (12 pages, 42628 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

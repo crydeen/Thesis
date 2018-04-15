@@ -2,46 +2,48 @@
 \contentsline {chapter}{DEDICATION}{iii}{Doc-Start}
 \contentsline {chapter}{ACKNOWLEDGEMENTS}{iv}{Doc-Start}
 \contentsline {chapter}{LIST OF FIGURES}{vi}{Doc-Start}
+\contentsline {chapter}{LIST OF TABLES}{vii}{Doc-Start}
 \contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ INTRODUCTION}{1}{chapter.1}
 \contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ CORPUS}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}State of the Union Addresses}{2}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Change in Purpose of State of the Union Address}{2}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Presidential Personality}{3}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Statistical Summary}{3}{section.2.2}
+\contentsline {section}{\numberline {2.2}Statistical Summary}{4}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Lexical Diversity}{4}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Grade Level}{4}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Grade Level}{5}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Information Visualization}{5}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Word Cloud}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}Word Cloud}{7}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}D3}{7}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Results}{8}{section.2.4}
+\contentsline {section}{\numberline {2.4}Results}{9}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Average Address Length}{9}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Lexical Diversity}{10}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Grade Level}{10}{subsection.2.4.3}
-\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ SENTIMENT ANALYSIS}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}Definition}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}Natural Language Processing}{12}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Natural Language Toolkit}{13}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Complications with Text Data}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}Lexicon}{14}{section.3.4}
-\contentsline {section}{\numberline {3.5}Alternative Sentiment Analysis Approaches}{15}{section.3.5}
-\contentsline {section}{\numberline {3.6}Process}{15}{section.3.6}
-\contentsline {section}{\numberline {3.7}Scatter Plot}{17}{section.3.7}
-\contentsline {section}{\numberline {3.8}D3}{20}{section.3.8}
-\contentsline {section}{\numberline {3.9}Results}{20}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}Overall}{21}{subsection.3.9.1}
-\contentsline {subsection}{\numberline {3.9.2}Presidential Tone Trends}{21}{subsection.3.9.2}
-\contentsline {subsection}{\numberline {3.9.3}Historical Events}{21}{subsection.3.9.3}
-\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ MACHINE LEARNING}{24}{chapter.4}
-\contentsline {section}{\numberline {4.1}Topic Classifier Sets}{25}{section.4.1}
-\contentsline {section}{\numberline {4.2}Normalization}{28}{section.4.2}
-\contentsline {section}{\numberline {4.3}Neural Networks}{28}{section.4.3}
-\contentsline {section}{\numberline {4.4}Naive Bayes Classifier}{29}{section.4.4}
-\contentsline {section}{\numberline {4.5}Decision Tree Classifier}{30}{section.4.5}
-\contentsline {section}{\numberline {4.6}Leave-one-out Cross-validation}{30}{section.4.6}
-\contentsline {section}{\numberline {4.7}Results}{31}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Vector Analysis}{32}{subsection.4.7.1}
-\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ CONCLUSION}{35}{chapter.5}
-\contentsline {section}{\numberline {5.1}Complications}{35}{section.5.1}
-\contentsline {section}{\numberline {5.2}Future Work}{37}{section.5.2}
-\contentsline {section}{\numberline {5.3}Final Thoughts}{37}{section.5.3}
-\contentsline {chapter}{BIBLIOGRAPHY}{38}{section.5.3}
+\contentsline {subsection}{\numberline {2.4.2}Lexical Diversity}{11}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Grade Level}{11}{subsection.2.4.3}
+\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ SENTIMENT ANALYSIS}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Definition}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Natural Language Processing}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Natural Language Toolkit}{14}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Complications with Text Data}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}Lexicon}{15}{section.3.4}
+\contentsline {section}{\numberline {3.5}Alternative Sentiment Analysis Approaches}{16}{section.3.5}
+\contentsline {section}{\numberline {3.6}Process}{16}{section.3.6}
+\contentsline {section}{\numberline {3.7}Scatter Plot}{19}{section.3.7}
+\contentsline {section}{\numberline {3.8}D3}{19}{section.3.8}
+\contentsline {section}{\numberline {3.9}Results}{22}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Overall}{22}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Presidential Tone Trends}{22}{subsection.3.9.2}
+\contentsline {subsection}{\numberline {3.9.3}Historical Events}{23}{subsection.3.9.3}
+\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ MACHINE LEARNING}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Topic Classifier Sets}{27}{section.4.1}
+\contentsline {section}{\numberline {4.2}Normalization}{30}{section.4.2}
+\contentsline {section}{\numberline {4.3}Neural Networks}{30}{section.4.3}
+\contentsline {section}{\numberline {4.4}Naive Bayes Classifier}{31}{section.4.4}
+\contentsline {section}{\numberline {4.5}Decision Tree Classifier}{32}{section.4.5}
+\contentsline {section}{\numberline {4.6}Leave-one-out Cross-validation}{32}{section.4.6}
+\contentsline {section}{\numberline {4.7}Results}{33}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Vector Analysis}{34}{subsection.4.7.1}
+\contentsline {chapter}{\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ CONCLUSION}{38}{chapter.5}
+\contentsline {section}{\numberline {5.1}Complications}{38}{section.5.1}
+\contentsline {section}{\numberline {5.2}Future Work}{40}{section.5.2}
+\contentsline {section}{\numberline {5.3}Final Thoughts}{40}{section.5.3}
+\contentsline {chapter}{BIBLIOGRAPHY}{42}{section.5.3}
+\contentsline {chapter}{APPENDICES}{46}{chapter*.1}

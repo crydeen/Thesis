@@ -88,6 +88,12 @@ d3.csv("CSV/coordinates.csv", function(error, data) {
       .style("text-anchor", "end")
       .text("Sentiment Score");
 
+  svg.append("g")
+      .attr("transform", "translate(0, "+286+")")
+    .append("line")
+      .attr("x2", width)
+      .style("stroke", "#2ecc71")
+      .style("stroke-width", "5px")
   // draw dots
   svg.selectAll(".dot")
       .data(data)

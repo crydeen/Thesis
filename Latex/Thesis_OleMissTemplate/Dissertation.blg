@@ -9,8 +9,8 @@ Warning--empty journal in liddy2001natural
 Warning--empty journal in somasundaran2010lexicon
 You've used 31 entries,
             3096 wiz_defined-function locations,
-            772 strings with 9751 characters,
-and the built_in function-call counts, 27703 in all, are:
+            773 strings with 9755 characters,
+and the built_in function-call counts, 27707 in all, are:
 = -- 3143
 > -- 918
 < -- 25
@@ -23,23 +23,23 @@ call.type$ -- 31
 change.case$ -- 166
 chr.to.int$ -- 30
 cite$ -- 96
-duplicate$ -- 2884
-empty$ -- 1556
+duplicate$ -- 2885
+empty$ -- 1557
 format.name$ -- 299
-if$ -- 5667
+if$ -- 5668
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 299
 newline$ -- 100
 num.names$ -- 124
-pop$ -- 1253
+pop$ -- 1250
 preamble$ -- 1
 purify$ -- 136
 quote$ -- 0
-skip$ -- 1824
+skip$ -- 1827
 stack$ -- 0
 substring$ -- 1128
-swap$ -- 2342
+swap$ -- 2343
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
